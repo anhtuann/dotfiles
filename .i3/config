@@ -26,7 +26,7 @@ bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -l 30"
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym Print exec scrot
+bindsym Print exec scrot ~/Documents/Screenshots/%Y-%m-%d-%T-scrot.png
 
 ### Audio keybindings ###
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 3%+
