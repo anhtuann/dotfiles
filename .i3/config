@@ -140,6 +140,9 @@ mode "$mode_system" {
 }
 bindsym $mod+Tab mode "$mode_system"
 
+### Trackpad ###
+bindsym $mod+m exec $HOME/Projects/366days/useful-scripts/touchpadtoggle.sh
+
 #######
 # BAR #
 #######
