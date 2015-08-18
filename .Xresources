@@ -1,6 +1,5 @@
 ! urxvt
-URxvt*font:  xft:Inconsolata:size=14:antialias=true
-URxvt*font:  xft:DejaVuSansMono:size=14:antialias=true
+URxvt*font:  xft:Inconsolata:size=14:antialias=true,xft:DejaVuSansMono:size=14:antialias=true
 !URxvt*depth: 32
 !depth deactivated for ranger to display images
 URxvt.scrollBar: false
