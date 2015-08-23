@@ -40,11 +40,11 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 
 ### Custom launchers ###
-bindsym $mod+Shift+a exec firefox -P 366d
-bindsym $mod+Shift+w exec firefox -P anhtuann
+bindsym $mod+a exec firefox -P 366d
+bindsym $mod+w exec firefox -P anhtuann
 
 ### Focus keybindings ###
-bindsym $mod+a focus parent
+bindsym $mod+Shift+a focus parent
 bindsym $mod+s focus child
 # Home row
 bindsym $mod+h focus left
@@ -99,7 +99,7 @@ bindsym $mod+b split h
 bindsym $mod+v split v
 # Layout mode
 bindsym $mod+f fullscreen
-bindsym $mod+w layout tabbed
+bindsym $mod+Shift+w layout tabbed
 bindsym $mod+e layout toggle split
 # Floating
 bindsym $mod+Shift+space floating toggle
