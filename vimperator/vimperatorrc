@@ -1,0 +1,8 @@
+"3.10.1 (created: 2015/08/25 00:41:59)
+
+noremap j 5j
+noremap k 5k
+set defsearch=duckduckgo
+source! /home/anhtuann/.vimperatorrc.local
+
+" vim: set ft=vimperator:
