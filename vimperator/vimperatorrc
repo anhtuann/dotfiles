@@ -2,7 +2,6 @@
 
 noremap j 5j
 noremap k 5k
-set defsearch=duckduckgo
 source! /home/anhtuann/.vimperatorrc.local
 
 " vim: set ft=vimperator:
