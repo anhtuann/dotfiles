@@ -4,6 +4,8 @@ URxvt.letterSpace: 1
 URxvt.scrollBar: false
 URxvt.perl-ext-common: default,matcher
 URxvt.urlLauncher: firefox
+URxvt.transparent: true
+URxvt.shading: 20
 
 ! Base16 Default
 ! Scheme: Chris Kempson (http://chriskempson.com)
