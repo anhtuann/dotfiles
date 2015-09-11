@@ -155,4 +155,4 @@ bar {
 exec --no-startup-id ibus-daemon -drx
 exec --no-startup-id udiskie -s
 exec --no-startup-id xrdb ~/.Xresources
-
+exec --no-startup-id sh ~/.fehbg
