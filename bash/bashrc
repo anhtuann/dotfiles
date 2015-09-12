@@ -25,3 +25,4 @@ source /usr/bin/virtualenvwrapper.sh
 
 # Autocompletion
 complete -cf sudo
+complete -cf optirun
