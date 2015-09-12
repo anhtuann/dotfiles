@@ -22,3 +22,6 @@ shopt -s checkwinsize
 # Virtualenvwrapper
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
+
+# Autocompletion
+complete -cf sudo
