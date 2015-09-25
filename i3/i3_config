@@ -30,12 +30,6 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 bindsym Print exec scrot ~/Documents/screenshots/%Y-%m-%d-%T-scrot.png
 
-### Audio keybindings ###
-bindsym XF86AudioRaiseVolume exec amixer -q sset Master 3%+
-bindsym XF86AudioLowerVolume exec amixer -q sset Master 3%-
-bindsym XF86AudioMute exec amixer -q sset Master toggle
-bindsym XF86AudioPlay exec playerctl play-pause
-
 ### Brightness keybindings ###
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5
@@ -158,3 +152,4 @@ exec --no-startup-id udiskie -s
 exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id sh ~/.fehbg
 exec --no-startup-id xset s off
+exec --no-startup-id volumeicon
