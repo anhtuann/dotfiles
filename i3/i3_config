@@ -34,6 +34,9 @@ bindsym Print exec scrot ~/Documents/screenshots/%Y-%m-%d-%T-scrot.png
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 
+### Audio keybindings ###
+bindsym XF86AudioPlay exec playerctl play-pause
+
 ### Custom launchers ###
 bindsym $mod+w exec firefox
 
