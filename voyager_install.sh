@@ -59,5 +59,9 @@ echo 'eval $(ssh-agent)' >> ~/.xinitrc
 
 #vimperator
 ln -sf ~/Projects/dotfiles/voyager/vimperator/vimperatorrc ~/.vimperatorrc
+
 pacaur -S --noconfirm libmtp android-file-transfer
 pacaur -S --noconfirm mpv
+
+pacaur -S --noconfirm gstreamer gst-libav gst-plugins-good
+pacaur -S --noconfirm transmission-cli
