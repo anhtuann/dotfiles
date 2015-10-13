@@ -2,7 +2,7 @@
 #requires scrot, imagemagick and i3lock
 #https://www.reddit.com/r/unixporn/comments/3358vu/i3lock_unixpornworthy_lock_screen/cqkmxxi
 
-icon="$HOME/Documents/lock.png"
+icon="$HOME/Projects/useful-scripts/lock.png"
 tmpbg='/tmp/screen.png'
 
 (( $# )) && { icon=$1; }
