@@ -74,3 +74,5 @@ pacaur -S --noconfirm libmtp android-file-transfer
 pacaur -S --noconfirm mpv
 pacaur -S --noconfirm gstreamer gst-libav gst-plugins-good
 
+#coding
+pacaur -S --noconfirm python python-virtualenv python-virtualenvwrapper
