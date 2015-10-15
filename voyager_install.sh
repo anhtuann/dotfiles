@@ -1,4 +1,8 @@
-#Graphic drivers
+#sort mirrors by speed
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+sudo sh -c 'rankmirrors -n 5 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist'
+
+#graphic drivers
 sudo pacman -S --noconfirm xf86-video-vesa xf86-video-intel xf86-video-ati xf86-video-nouveau
 
 #Xserver
@@ -12,6 +16,7 @@ echo exec i3 > ~/.xinitrc
 #git for pacaur install
 sudo pacman -S --noconfirm git
 git config --global push.default simple
+sed -i '1s/^/eval $(ssh-agent)\n/' ~/.xinitrc
 
 #pacaur install
 mkdir /tmp/aur && cd /tmp/aur
@@ -35,7 +40,6 @@ mkdir ~/Projects && cd ~/Projects
 git clone https://github.com/anhtuann/dotfiles.git
 
 #Xresources and bashrc added
-ln -s ~/Projects/dotfiles/Xresources/Xresources ~/.Xresources
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 ln -sf ~/Projects/dotfiles/voyager/bash/bashrc ~/.bashrc
 ln -sf ~/Projects/dotfiles/voyager/Xresources/Xresources ~/.Xresources
@@ -51,6 +55,9 @@ ln -sf ~/Projects/dotfiles/voyager/i3/i3status_config ~/.config/i3status/config
 #various utilities
 pacaur -S --noconfirm alsa-utils
 pacaur -S --noconfirm xclip
+pacaur -S --noconfirm transmission-cli
+pacaur -S --noconfirm imagemagick
+pacaur -S --noconfirm ttf-mplus
 
 #ssh keys
 pacaur -S --noconfirm openssh
@@ -60,8 +67,10 @@ echo 'eval $(ssh-agent)' >> ~/.xinitrc
 #vimperator
 ln -sf ~/Projects/dotfiles/voyager/vimperator/vimperatorrc ~/.vimperatorrc
 
+#mtp support
 pacaur -S --noconfirm libmtp android-file-transfer
-pacaur -S --noconfirm mpv
 
+#multimedia
+pacaur -S --noconfirm mpv
 pacaur -S --noconfirm gstreamer gst-libav gst-plugins-good
-pacaur -S --noconfirm transmission-cli
+
