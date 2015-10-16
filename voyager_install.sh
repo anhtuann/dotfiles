@@ -76,3 +76,9 @@ pacaur -S --noconfirm gstreamer gst-libav gst-plugins-good
 
 #coding
 pacaur -S --noconfirm python python-virtualenv python-virtualenvwrapper
+
+#usb manager
+pacaur -S --noconfirm udisks2 udiskie ntfs-3g dosfstools
+
+#file manager
+pacaur -S --noconfirm ranger
