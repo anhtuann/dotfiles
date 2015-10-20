@@ -32,6 +32,8 @@ bindsym Print exec scrot ~/Documents/screenshots/%Y-%m-%d-%T-scrot.png
 ### Brightness keybindings ###
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86KbdBrightnessUp exec kbdlight up
+bindsym XF86KbdBrightnessDown exec kbdlight down
 
 ### Audio keybindings ###
 bindsym XF86AudioPlay exec playerctl play-pause
