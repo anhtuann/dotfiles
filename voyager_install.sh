@@ -34,6 +34,7 @@ pacaur -S --noconfirm rxvt-unicode
 pacaur -S --noconfirm xf86-input-libinput 
 pacaur -S --noconfirm ttf-hack
 pacaur -S --noconfirm firefox
+pacaur -S --noconfirm xbacklight kbdlight
 
 #dotfiles downloaded from github
 mkdir ~/Projects && cd ~/Projects
@@ -58,6 +59,7 @@ pacaur -S --noconfirm xclip
 pacaur -S --noconfirm transmission-cli
 pacaur -S --noconfirm imagemagick
 pacaur -S --noconfirm ttf-mplus
+pacaur -S --noconfirm unrar
 
 #ssh keys
 pacaur -S --noconfirm openssh
