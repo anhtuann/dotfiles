@@ -1,6 +1,7 @@
 #sort mirrors by speed
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo sh -c 'rankmirrors -n 5 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist'
+sudo pacman -Syu
 
 #graphic drivers
 sudo pacman -S --noconfirm xf86-video-vesa xf86-video-intel xf86-video-ati xf86-video-nouveau
@@ -19,13 +20,16 @@ git config --global push.default simple
 sed -i '1s/^/eval $(ssh-agent)\n/' ~/.xinitrc
 
 #pacaur install
-mkdir /tmp/aur && cd /tmp/aur
+mkdir /tmp/aur
+cd /tmp/aur
 git clone http://aur.archlinux.org/cower.git
 git clone http://aur.archlinux.org/pacaur.git
 gpg --recv-keys 1EB2638FF56C0C53
-cd cower && makepkg -s
+cd cower
+makepkg -s
 sudo pacman -U cower*.pkg.tar.xz
-cd ../aur && makepkg -s
+cd ../pacaur
+makepkg -s
 sudo pacman -U pacaur*.pkg.tar.xz
 cd
 
@@ -36,21 +40,29 @@ pacaur -S --noconfirm ttf-hack
 pacaur -S --noconfirm firefox
 pacaur -S --noconfirm xbacklight kbdlight
 
+#vim
+pacaur -S --noconfirm vim
+ln -sf ~/Projects/dotfiles/voyager/vim/vimrc ~/.vimrc
+
 #dotfiles downloaded from github
-mkdir ~/Projects && cd ~/Projects
+mkdir ~/Projects 
+cd ~/Projects
 git clone https://github.com/anhtuann/dotfiles.git
+
+#useful scripts downloaded from github
+git clone https://github.com/anhtuann/useful-scripts.git
 
 #Xresources and bashrc added
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 ln -sf ~/Projects/dotfiles/voyager/bash/bashrc ~/.bashrc
 ln -sf ~/Projects/dotfiles/voyager/Xresources/Xresources ~/.Xresources
 source ~/.bashrc
-xrdb -load ~/.Xresources
 
 #i3 config added
+mkdir ~/.i3
 ln -sf ~/Projects/dotfiles/voyager/i3/i3_config ~/.i3/config
 pacaur -S --noconfirm rofi scrot playerctl feh volumeicon dunst
-mkdir ~/.config/i3status
+mkdir -p ~/.config/i3status
 ln -sf ~/Projects/dotfiles/voyager/i3/i3status_config ~/.config/i3status/config
 
 #various utilities
