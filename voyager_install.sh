@@ -40,10 +40,6 @@ pacaur -S --noconfirm ttf-hack
 pacaur -S --noconfirm firefox
 pacaur -S --noconfirm xbacklight kbdlight
 
-#vim
-pacaur -S --noconfirm vim
-ln -sf ~/Projects/dotfiles/voyager/vim/vimrc ~/.vimrc
-
 #dotfiles downloaded from github
 mkdir ~/Projects 
 cd ~/Projects
@@ -51,6 +47,10 @@ git clone https://github.com/anhtuann/dotfiles.git
 
 #useful scripts downloaded from github
 git clone https://github.com/anhtuann/useful-scripts.git
+
+#vim
+pacaur -S --noconfirm vim
+ln -sf ~/Projects/dotfiles/voyager/vim/vimrc ~/.vimrc
 
 #Xresources and bashrc added
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
