@@ -27,10 +27,10 @@ git clone http://aur.archlinux.org/pacaur.git
 gpg --recv-keys 1EB2638FF56C0C53
 cd cower
 makepkg -s
-sudo pacman -U cower*.pkg.tar.xz
+sudo pacman -U --noconfirm cower*.pkg.tar.xz
 cd ../pacaur
 makepkg -s
-sudo pacman -U pacaur*.pkg.tar.xz
+sudo pacman -U --noconfirm pacaur*.pkg.tar.xz
 cd
 
 #various applications for i3+firefox
