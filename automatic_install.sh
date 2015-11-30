@@ -45,6 +45,11 @@ if [ $environment == "real" ]
         sudo pacman -Syu
 fi
 
+#ssh keys
+sudo pacman -S --noconfirm openssh
+ssh-keygen
+echo 'eval $(ssh-agent)' >> ~/.xinitrc
+
 #graphic drivers
 if [ $environment == "test" ]
     then
@@ -129,11 +134,6 @@ pacaur -S --noconfirm transmission-cli
 pacaur -S --noconfirm imagemagick
 pacaur -S --noconfirm ttf-mplus
 pacaur -S --noconfirm unrar
-
-#ssh keys
-pacaur -S --noconfirm openssh
-ssh-keygen
-echo 'eval $(ssh-agent)' >> ~/.xinitrc
 
 #vimperator
 ln -sf ~/Projects/dotfiles/$machine/vimperator/vimperatorrc ~/.vimperatorrc
