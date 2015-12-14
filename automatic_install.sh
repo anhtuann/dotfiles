@@ -47,7 +47,10 @@ fi
 
 #ssh keys
 sudo pacman -S --noconfirm openssh
-ssh-keygen
+if [ $environment == "test" ]
+    then
+        ssh-keygen
+fi
 echo 'eval $(ssh-agent)' >> ~/.xinitrc
 
 #graphic drivers
@@ -123,7 +126,7 @@ source ~/.bashrc
 #i3 config added
 mkdir ~/.i3
 ln -sf ~/Projects/dotfiles/$machine/i3/i3_config ~/.i3/config
-pacaur -S --noconfirm rofi scrot playerctl feh volumeicon dunst
+pacaur -S --noconfirm rofi scrot feh volumeicon dunst
 mkdir -p ~/.config/i3status
 ln -sf ~/Projects/dotfiles/$machine/i3/i3status_config ~/.config/i3status/config
 
