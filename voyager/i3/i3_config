@@ -35,9 +35,6 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 bindsym XF86KbdBrightnessUp exec kbdlight up
 bindsym XF86KbdBrightnessDown exec kbdlight down
 
-### Audio keybindings ###
-bindsym XF86AudioPlay exec playerctl play-pause
-
 ### Custom launchers ###
 bindsym $mod+w exec firefox
 
