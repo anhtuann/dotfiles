@@ -31,8 +31,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym Print exec scrot ~/Documents/screenshots/%Y-%m-%d-%T-scrot.png
 
 ### Brightness keybindings ###
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
 
 ### Custom launchers ###
 bindsym $mod+w exec firefox
@@ -147,6 +147,7 @@ bar {
 ####################
 # STARTUP PROGRAMS #
 ####################
+set $libinput $HOME/Projects/useful-scripts/libinput.sh
 exec --no-startup-id ibus-daemon -drx
 exec --no-startup-id udiskie -s
 exec --no-startup-id xrdb ~/.Xresources
@@ -154,3 +155,4 @@ exec --no-startup-id sh ~/.fehbg
 exec --no-startup-id xset s off
 exec --no-startup-id volumeicon
 exec --no-startup-id dunst
+exec --no-startup-id $libinput
