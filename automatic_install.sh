@@ -128,7 +128,9 @@ mkdir ~/.i3
 ln -sf ~/Projects/dotfiles/$machine/i3/i3_config ~/.i3/config
 pacaur -S --noconfirm rofi scrot feh volumeicon dunst
 mkdir -p ~/.config/i3status
+mkdir -p ~/.config/volumeicon
 ln -sf ~/Projects/dotfiles/$machine/i3/i3status_config ~/.config/i3status/config
+ln -sf ~/Projects/dotfiles/$machine/volumeicon/volumeicon_config ~/.config/volumeicon/volumeicon
 
 #various utilities
 pacaur -S --noconfirm alsa-utils
