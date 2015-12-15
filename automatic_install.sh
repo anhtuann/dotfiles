@@ -71,6 +71,7 @@ fi
 #Xserver
 sudo pacman -S --noconfirm xorg-server xorg-server-utils xorg-apps
 sudo pacman -S --noconfirm xorg-xinit
+sudo pacman -S --noconfirm lxrandr
 
 #i3 initialisation
 sudo pacman -S --noconfirm i3
@@ -159,3 +160,6 @@ pacaur -S --noconfirm udisks2 udiskie ntfs-3g dosfstools
 
 #file manager
 pacaur -S --noconfirm ranger
+
+#useful softwares
+pacaur -S --noconfirm calibre blender
