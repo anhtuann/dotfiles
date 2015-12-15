@@ -1,21 +1,4 @@
 #option configuration
-PS3='Which machine do you wish to install : '
-options=("dreamland" "voyager")
-select opt in "${options[@]}"
-do
-    case $opt in
-        "dreamland")
-            machine="dreamland"
-	    break
-            ;;
-        "voyager")
-            machine="voyager"
-	    break
-            ;;
-        *) echo invalid option;;
-    esac
-done
-
 PS3='Which environment is it :'
 options=("test" "real")
 select opt in "${options[@]}"
@@ -32,9 +15,6 @@ do
         *) echo invalid option;;
     esac
 done
-
-echo $machine
-echo $environment
 
 #sort mirrors by speed
 if [ $environment == "real" ]
@@ -58,14 +38,9 @@ if [ $environment == "test" ]
     then
         echo 'Installing virtualbox graphic driver'
         sudo pacman -S --noconfirm virtualbox-guest-utils
-elif [ $machine == "voyager" ]
-    then
-        echo 'Installing generic graphic drivers'
-        sudo pacman -S --noconfirm xf86-video-vesa xf86-video-intel xf86-video-ati xf86-video-nouveau
-elif [ $machine == "dreamland" ]
-    then
-        echo 'Installing nvidia driver'
-        sudo pacman -S --noconfirm nvidia
+else
+    echo 'Installing nvidia driver'
+    sudo pacman -S --noconfirm nvidia
 fi
 
 #Xserver
@@ -75,12 +50,10 @@ sudo pacman -S --noconfirm lxrandr
 
 #i3 initialisation
 sudo pacman -S --noconfirm i3
-echo exec i3 > ~/.xinitrc
 
 #git for pacaur install
 sudo pacman -S --noconfirm git
 git config --global push.default simple
-sed -i '1s/^/eval $(ssh-agent)\n/' ~/.xinitrc
 
 #pacaur install
 sudo pacman -S --noconfirm expac
@@ -105,6 +78,7 @@ pacaur -S --noconfirm xf86-input-libinput
 pacaur -S --noconfirm ttf-hack
 pacaur -S --noconfirm firefox
 pacaur -S --noconfirm light-git
+pacaur -S --noconfirm rofi scrot feh volumeicon dunst
 
 #dotfiles downloaded from github
 mkdir ~/Projects 
@@ -116,22 +90,6 @@ git clone https://github.com/anhtuann/useful-scripts.git
 
 #vim
 pacaur -S --noconfirm vim
-ln -sf ~/Projects/dotfiles/$machine/vim/vimrc ~/.vimrc
-
-#Xresources and bashrc added
-git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-ln -sf ~/Projects/dotfiles/$machine/bash/bashrc ~/.bashrc
-ln -sf ~/Projects/dotfiles/$machine/Xresources/Xresources ~/.Xresources
-source ~/.bashrc
-
-#i3 config added
-mkdir ~/.i3
-ln -sf ~/Projects/dotfiles/$machine/i3/i3_config ~/.i3/config
-pacaur -S --noconfirm rofi scrot feh volumeicon dunst
-mkdir -p ~/.config/i3status
-mkdir -p ~/.config/volumeicon
-ln -sf ~/Projects/dotfiles/$machine/i3/i3status_config ~/.config/i3status/config
-ln -sf ~/Projects/dotfiles/$machine/volumeicon/volumeicon_config ~/.config/volumeicon/volumeicon
 
 #various utilities
 pacaur -S --noconfirm alsa-utils
@@ -141,9 +99,6 @@ pacaur -S --noconfirm imagemagick
 pacaur -S --noconfirm ttf-mplus
 pacaur -S --noconfirm unrar
 pacaur -S --noconfirm rsync
-
-#vimperator
-ln -sf ~/Projects/dotfiles/$machine/vimperator/vimperatorrc ~/.vimperatorrc
 
 #mtp support
 pacaur -S --noconfirm libmtp android-file-transfer
@@ -163,3 +118,6 @@ pacaur -S --noconfirm ranger
 
 #useful softwares
 pacaur -S --noconfirm calibre blender
+
+#generate config files
+/bin/bash ~/Projects/useful-scripts/arch_install/genconf.sh
