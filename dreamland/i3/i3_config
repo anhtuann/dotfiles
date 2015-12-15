@@ -16,7 +16,6 @@ workspace_auto_back_and_forth yes
 ##############
 font xft:Inconsolata Medium 12
 new_window pixel 3
-workspace 10 output HDMI1
 
 ###############
 # KEYBINDINGS #
