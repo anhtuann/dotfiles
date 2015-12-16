@@ -16,8 +16,6 @@ ln -sf ~/Projects/dotfiles/dreamland/volumeicon_conf ~/.config/volumeicon/volume
 
 ln -sf ~/Projects/dotfiles/dreamland/vimperatorrc_conf ~/.vimperatorrc
 
-sudo ln -sf ~/Projects/dotfiles/dreamland/synaptics_conf /etc/X11/xorg.conf.d/50-synaptics.conf
-
 sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/virtualbox_conf /etc/modules-load.d/virtualbox.conf
 
 ln -sf ~/Projects/dotfiles/dreamland/asoundrc_conf ~/.asoundrc
