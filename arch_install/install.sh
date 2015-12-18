@@ -99,6 +99,7 @@ pacaur -S --noconfirm imagemagick
 pacaur -S --noconfirm ttf-mplus
 pacaur -S --noconfirm unrar
 pacaur -S --noconfirm rsync
+pacaur -S --noconfirm wget
 
 #mtp support
 pacaur -S --noconfirm libmtp android-file-transfer
@@ -126,6 +127,13 @@ sudo gpasswd -a $USER vboxusers
 pacaur -S --noconfirm virtualbox-guest-iso net-tools
 pacaur -S --noconfirm virtualbox-ext-oracle qt4
 
+#CD/DVD handling
+pacaur -S --noconfirm cdrkit
+
+#change shell to zsh
+pacaur -S --noconfirm zsh
+chsh -s /bin/zsh
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 #generate config files
-/bin/bash ~/Projects/useful-scripts/arch_install/genconf.sh
+/bin/zsh ~/Projects/useful-scripts/arch_install/genconf.sh
