@@ -39,8 +39,10 @@ if [ $environment == "test" ]
         echo 'Installing virtualbox graphic driver'
         sudo pacman -S --noconfirm virtualbox-guest-utils
 else
-    echo 'Installing nvidia driver'
-    sudo pacman -S --noconfirm nvidia
+    echo 'Installing bumblebee on intel/nvidia driver'
+    sudo pacman -S --noconfirm bumblebee mesa xf86-video-intel nvidia
+    sudo gpasswd -a $USER bumblebee
+    sudo systemctl enable bumblebeed.service 
 fi
 
 #Xserver
@@ -71,6 +73,9 @@ sudo pacman -U --noconfirm pacaur*.pkg.tar.xz
 cd
 mkdir -p ~/.config/pacaur
 echo "displaybuildfiles=none" > ~/.config/pacaur/config
+
+#bbswitch-dkms installation for bumblebee
+pacaur -S --noconfirm bbswitch-dkms
 
 #various applications for i3+firefox
 pacaur -S --noconfirm rxvt-unicode
