@@ -123,7 +123,7 @@ pacaur -S --noconfirm udisks2 udiskie ntfs-3g dosfstools
 pacaur -S --noconfirm ranger
 
 #useful softwares
-pacaur -S --noconfirm calibre blender
+pacaur -S --noconfirm calibre blender audacity
 
 #virtualbox
 pacaur -S --noconfirm virtualbox virtualbox-host-dkms linux-headers
