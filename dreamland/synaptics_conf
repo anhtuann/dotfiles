@@ -1,0 +1,11 @@
+Section "InputClass"
+        Identifier "touchpad catchall"
+        Driver "synaptics"
+        MatchIsTouchpad "on"
+        Option "TapButton1" "1"
+        Option "TapButton2" "3"
+        Option "TapButton3" "2"
+        Option "VertScrollDelta" "60"
+        Option "MaxTapTime" "500"
+        Option "MaxTapMove" "10"
+EndSection
