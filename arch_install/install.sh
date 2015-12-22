@@ -141,4 +141,4 @@ chsh -s /bin/zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 #generate config files
-/bin/zsh ~/Projects/useful-scripts/arch_install/genconf.sh
+/bin/zsh ~/Projects/dotfiles/genconf.sh
