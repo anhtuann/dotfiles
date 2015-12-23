@@ -77,10 +77,12 @@ echo "displaybuildfiles=none" > ~/.config/pacaur/config
 #bbswitch-dkms installation for bumblebee
 pacaur -S --noconfirm bbswitch-dkms
 
+#fonts to install
+pacaur -S --noconfirm ttf-hack ttf-mplus ttf-symbola
+
 #various applications for i3+firefox
 pacaur -S --noconfirm rxvt-unicode
 pacaur -S --noconfirm xf86-input-libinput 
-pacaur -S --noconfirm ttf-hack
 pacaur -S --noconfirm firefox
 pacaur -S --noconfirm light-git
 pacaur -S --noconfirm rofi scrot feh volumeicon dunst
@@ -101,7 +103,6 @@ pacaur -S --noconfirm alsa-utils
 pacaur -S --noconfirm xclip
 pacaur -S --noconfirm transmission-cli
 pacaur -S --noconfirm imagemagick
-pacaur -S --noconfirm ttf-mplus
 pacaur -S --noconfirm unrar
 pacaur -S --noconfirm rsync
 pacaur -S --noconfirm wget
