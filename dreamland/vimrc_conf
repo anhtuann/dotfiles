@@ -1,2 +1,35 @@
+" Vundle config
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+"plugins vundle
+Plugin 'flazz/vim-colorschemes'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" End of Vundle config
+
+" Disable swap files
+set nobackup
+set noswapfile
+
+" Automatic reloading of .vimrc
+autocmd! bufwritepost .vimrc source %
+
+" Line numbers
+set number
+
 filetype plugin on
 syntax on
+
+colorscheme wombat256
