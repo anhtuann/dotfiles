@@ -1,9 +1,6 @@
 ln -sf ~/Projects/dotfiles/dreamland/xinitrc_conf ~/.xinitrc
 ln -sf ~/Projects/dotfiles/dreamland/vimrc_conf ~/.vimrc
 
-ln -sf ~/Projects/dotfiles/dreamland/bashrc_conf ~/.bashrc
-git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-
 ln -sf ~/Projects/dotfiles/dreamland/Xresources_conf ~/.Xresources
 
 mkdir ~/.i3
