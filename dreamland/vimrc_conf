@@ -32,4 +32,4 @@ set number
 filetype plugin on
 syntax on
 
-colorscheme wombat256
+colorscheme wombat256i
