@@ -22,3 +22,5 @@ ln -sf ~/Projects/dotfiles/dreamland/asoundrc_conf ~/.asoundrc
 ln -sf ~/Projects/dotfiles/dreamland/zshrc_conf ~/.zshrc
 
 sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/bumblebee_nvidia_conf /etc/bumblebee/xorg.conf.nvidia
+
+sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/tlp_conf /etc/default/tlp
