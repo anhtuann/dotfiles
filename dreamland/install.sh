@@ -147,4 +147,4 @@ pacaur -S --noconfirm tlp
 sudo systemctl enable tlp
 
 #generate config files
-/bin/zsh ~/Projects/dotfiles/genconf.sh
+/bin/zsh ~/Projects/dotfiles/dreamland/genconf.sh
