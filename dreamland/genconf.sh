@@ -28,3 +28,6 @@ sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/bumblebee_nvidia_conf /et
 sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/tlp_conf /etc/default/tlp
 
 sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/pacman_conf /etc/pacman.conf
+
+mkdir /home/anhtuann/.config/dunst
+ln -sf /home/anhtuann/Projects/dotfiles/dreamland/dunst_conf /home/anhtuann/.config/dunst/dunstrc
