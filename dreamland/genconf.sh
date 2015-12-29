@@ -23,11 +23,11 @@ ln -sf ~/Projects/dotfiles/dreamland/asoundrc_conf ~/.asoundrc
 
 ln -sf ~/Projects/dotfiles/dreamland/zshrc_conf ~/.zshrc
 
-sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/bumblebee_nvidia_conf /etc/bumblebee/xorg.conf.nvidia
+sudo ln -sf ~/Projects/dotfiles/dreamland/bumblebee_nvidia_conf /etc/bumblebee/xorg.conf.nvidia
 
-sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/tlp_conf /etc/default/tlp
+sudo ln -sf ~/Projects/dotfiles/dreamland/tlp_conf /etc/default/tlp
 
-sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/pacman_conf /etc/pacman.conf
+sudo ln -sf ~/Projects/dotfiles/dreamland/pacman_conf /etc/pacman.conf
 
-mkdir /home/anhtuann/.config/dunst
-ln -sf /home/anhtuann/Projects/dotfiles/dreamland/dunst_conf /home/anhtuann/.config/dunst/dunstrc
+mkdir ~/.config/dunst
+ln -sf ~/Projects/dotfiles/dreamland/dunst_conf /home/anhtuann/.config/dunst/dunstrc
