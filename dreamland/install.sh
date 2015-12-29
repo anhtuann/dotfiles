@@ -78,7 +78,7 @@ echo "displaybuildfiles=none" > ~/.config/pacaur/config
 pacaur -S --noconfirm bbswitch-dkms
 
 #fonts to install
-pacaur -S --noconfirm ttf-hack ttf-mplus ttf-symbola
+pacaur -S --noconfirm ttf-hack ttf-mplus ttf-symbola ttf-droid
 
 #various applications for i3+firefox
 pacaur -S --noconfirm rxvt-unicode
