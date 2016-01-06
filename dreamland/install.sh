@@ -104,7 +104,7 @@ pacaur -S --noconfirm alsa-utils
 pacaur -S --noconfirm xclip
 pacaur -S --noconfirm transmission-cli
 pacaur -S --noconfirm imagemagick
-pacaur -S --noconfirm unrar
+pacaur -S --noconfirm unrar unzip
 pacaur -S --noconfirm rsync
 pacaur -S --noconfirm wget
 
