@@ -107,6 +107,7 @@ pacaur -S --noconfirm unrar unzip
 pacaur -S --noconfirm rsync
 pacaur -S --noconfirm wget
 pacaur -S --noconfirm deluge python2-notify python2-mako python2-service-identity
+pacaur -S --noconfirm redshift python-xdg
 
 #mtp support
 pacaur -S --noconfirm libmtp android-file-transfer
