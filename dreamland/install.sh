@@ -102,11 +102,11 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 #various utilities
 pacaur -S --noconfirm alsa-utils
 pacaur -S --noconfirm xclip
-pacaur -S --noconfirm transmission-cli
 pacaur -S --noconfirm imagemagick
 pacaur -S --noconfirm unrar unzip
 pacaur -S --noconfirm rsync
 pacaur -S --noconfirm wget
+pacaur -S --noconfirm deluge python2-notify python2-mako python2-service-identity
 
 #mtp support
 pacaur -S --noconfirm libmtp android-file-transfer
