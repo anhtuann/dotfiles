@@ -48,7 +48,7 @@ fi
 #Xserver
 sudo pacman -S --noconfirm xorg-server xorg-server-utils xorg-apps
 sudo pacman -S --noconfirm xorg-xinit
-sudo pacman -S --noconfirm lxrandr
+sudo pacman -S --noconfirm arandr
 
 #i3 initialisation
 sudo pacman -S --noconfirm i3
