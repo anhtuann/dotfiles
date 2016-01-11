@@ -32,3 +32,8 @@ set number
 syntax on
 
 colorscheme wombat256i
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
