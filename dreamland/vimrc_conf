@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 "plugins vundle
 Plugin 'flazz/vim-colorschemes'
+Plugin 'vimwiki'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,3 +38,11 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+" Vimwiki settings
+filetype plugin on
+let mapleader=','
+let my_wiki = {}
+let my_wiki.path = '~/Documents/my_wiki/wiki/'
+let my_wiki.path_html = '~/Documents/my_wiki/html/'
+let g:vimwiki_list = [my_wiki,]

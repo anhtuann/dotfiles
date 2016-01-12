@@ -1,7 +1,12 @@
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 
 ln -sf ~/Projects/dotfiles/dreamland/xinitrc_conf ~/.xinitrc
+
+#vim
 ln -sf ~/Projects/dotfiles/dreamland/vimrc_conf ~/.vimrc
+mkdir -p .vim/bundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/vimwiki/vimwiki.git ~/.vim/bundle/vimwiki
 
 ln -sf ~/Projects/dotfiles/dreamland/Xresources_conf ~/.Xresources
 
