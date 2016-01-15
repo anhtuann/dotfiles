@@ -135,9 +135,6 @@ sudo gpasswd -a $USER vboxusers
 pacaur -S --noconfirm virtualbox-guest-iso net-tools
 pacaur -S --noconfirm virtualbox-ext-oracle qt4
 
-#CD/DVD handling
-pacaur -S --noconfirm cdrkit
-
 #change shell to zsh
 pacaur -S --noconfirm zsh
 chsh -s /bin/zsh
