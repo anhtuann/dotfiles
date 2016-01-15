@@ -135,6 +135,9 @@ sudo gpasswd -a $USER vboxusers
 pacaur -S --noconfirm virtualbox-guest-iso net-tools
 pacaur -S --noconfirm virtualbox-ext-oracle qt4
 
+#misc
+pacaur -S --noconfirm weechat
+
 #change shell to zsh
 pacaur -S --noconfirm zsh
 chsh -s /bin/zsh
