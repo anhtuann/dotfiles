@@ -108,6 +108,7 @@ pacaur -S --noconfirm rsync
 pacaur -S --noconfirm wget
 pacaur -S --noconfirm deluge python2-notify python2-mako python2-service-identity
 pacaur -S --noconfirm redshift python-xdg
+pacaur -S --noconfirm tmux
 
 #mtp support
 pacaur -S --noconfirm libmtp android-file-transfer

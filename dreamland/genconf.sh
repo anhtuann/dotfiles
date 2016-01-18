@@ -28,9 +28,14 @@ ln -sf ~/Projects/dotfiles/dreamland/asoundrc_conf ~/.asoundrc
 
 ln -sf ~/Projects/dotfiles/dreamland/zshrc_conf ~/.zshrc
 
+ln -sf ~/Projects/dotfiles/dreamland/tmux_conf ~/.tmux.conf
+
 sudo ln -sf ~/Projects/dotfiles/dreamland/bumblebee_nvidia_conf /etc/bumblebee/xorg.conf.nvidia
 
 sudo ln -sf ~/Projects/dotfiles/dreamland/tlp_conf /etc/default/tlp
+sudo systemctl enable tlp.service
+sudo systemctl enable tlp-sleep.service
+sudo systemctl disable systemd-rfkill.service
 
 sudo ln -sf ~/Projects/dotfiles/dreamland/pacman_conf /etc/pacman.conf
 
