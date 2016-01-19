@@ -6,6 +6,9 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
+#ENV variables
+export EDITOR="vim"
+
 # Path to your oh-my-zsh installation.
   export ZSH=/home/anhtuann/.oh-my-zsh
 
