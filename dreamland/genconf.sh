@@ -41,3 +41,5 @@ sudo ln -sf ~/Projects/dotfiles/dreamland/pacman_conf /etc/pacman.conf
 
 mkdir ~/.config/dunst
 ln -sf ~/Projects/dotfiles/dreamland/dunst_conf /home/anhtuann/.config/dunst/dunstrc
+
+sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/bumblebee_conf /etc/bumblebee/bumblebee.conf
