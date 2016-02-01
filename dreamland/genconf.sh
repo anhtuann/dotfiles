@@ -43,3 +43,6 @@ mkdir ~/.config/dunst
 ln -sf ~/Projects/dotfiles/dreamland/dunst_conf /home/anhtuann/.config/dunst/dunstrc
 
 sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/bumblebee_conf /etc/bumblebee/bumblebee.conf
+
+ranger --copy-config=all
+ln -sf /home/anhtuann/Projects/dotfiles/dreamland/ranger_rifle_conf /home/anhtuann/.config/ranger/rifle.conf
