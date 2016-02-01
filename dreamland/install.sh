@@ -148,5 +148,7 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 pacaur -S --noconfirm tlp
 sudo systemctl enable tlp
 
+pacaur -S --noconfirm wave-git
+
 #generate config files
 /bin/zsh ~/Projects/dotfiles/dreamland/genconf.sh
