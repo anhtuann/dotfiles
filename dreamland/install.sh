@@ -20,7 +20,9 @@ done
 if [ $environment == "real" ]
     then
         echo 'Sorting mirrors by speed'
+        sudo wget https://www.archlinux.org/mirrorlist/?country=all&protocol=http&ip_version=4 -O /etc/pacman.d/mirrorlist
         sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+        sudo sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.bak
         sudo sh -c 'rankmirrors -n 5 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist'
         sudo pacman -Syu
 fi
@@ -148,6 +150,7 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 pacaur -S --noconfirm tlp
 sudo systemctl enable tlp
 
+#useful for generating quindal tones
 pacaur -S --noconfirm wave-git
 
 #generate config files
