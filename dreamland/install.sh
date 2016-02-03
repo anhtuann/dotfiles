@@ -1,3 +1,7 @@
+#logging
+exec > >(tee -i install_log.txt)
+exec 2>&1
+
 #option configuration
 PS3='Which environment is it :'
 options=("test" "real")
