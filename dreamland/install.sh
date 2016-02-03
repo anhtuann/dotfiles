@@ -152,11 +152,6 @@ fi
 #misc
 pacaur -S --noconfirm weechat
 
-#change shell to zsh
-pacaur -S --noconfirm zsh
-chsh -s /bin/zsh
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
 #power management
 pacaur -S --noconfirm tlp
 sudo systemctl enable tlp
@@ -165,4 +160,9 @@ sudo systemctl enable tlp
 pacaur -S --noconfirm wave-git
 
 #generate config files
-/bin/zsh ~/Projects/dotfiles/dreamland/genconf.sh
+sh ~/Projects/dotfiles/dreamland/genconf.sh
+
+#change shell to zsh
+pacaur -S --noconfirm zsh
+chsh -s /bin/zsh
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
