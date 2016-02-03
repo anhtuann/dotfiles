@@ -85,7 +85,10 @@ mkdir -p ~/.config/pacaur
 echo "displaybuildfiles=none" > ~/.config/pacaur/config
 
 #bbswitch-dkms installation for bumblebee
-pacaur -S --noconfirm bbswitch-dkms
+if [ $environment == "real" ]
+    then
+        pacaur -S --noconfirm bbswitch-dkms
+fi
 
 #fonts to install
 pacaur -S --noconfirm ttf-hack ttf-mplus ttf-symbola ttf-droid
