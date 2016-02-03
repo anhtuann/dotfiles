@@ -162,12 +162,5 @@ sudo systemctl enable tlp
 #useful for generating quindal tones
 pacaur -S --noconfirm wave-git
 
-#zsh
-pacaur -S --noconfirm zsh
-
 #generate config files
 sh ~/Projects/dotfiles/dreamland/genconf.sh
-
-#change shell to zsh
-chsh -s /bin/zsh
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
