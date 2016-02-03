@@ -25,7 +25,7 @@ if [ $environment == "real" ]
         sudo sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.bak
         sudo sh -c 'rankmirrors -n 5 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist'
 else
-    sudo wget --no-check-certificate https://raw.githubusercontent.com/anhtuann/dotfiles/master/dreamland/pacman_mirrorlist -O /etc/pacman.d/mirrorlist
+    sudo wget https://raw.githubusercontent.com/anhtuann/dotfiles/master/dreamland/pacman_mirrorlist -O /etc/pacman.d/mirrorlist
 fi
 
 #update arch
