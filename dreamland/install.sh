@@ -24,8 +24,10 @@ if [ $environment == "real" ]
         sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
         sudo sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.bak
         sudo sh -c 'rankmirrors -n 5 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist'
-        sudo pacman -Syu
 fi
+
+#update pacman
+sudo pacman -Syu
 
 #ssh keys
 sudo pacman -S --noconfirm openssh
