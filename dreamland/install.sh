@@ -25,7 +25,7 @@ if [ $environment == "real" ]
         sudo sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.bak
         sudo sh -c 'rankmirrors -n 5 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist'
 else
-    sudo wget https://raw.githubusercontent.com/anhtuann/dotfiles/master/dreamland/pacman_mirrorlist -O /etc/pacman.d/mirrorlist
+    sudo wget --no-check-certificate https://raw.githubusercontent.com/anhtuann/dotfiles/master/dreamland/pacman_mirrorlist -O /etc/pacman.d/mirrorlist
 fi
 
 #update arch
@@ -136,11 +136,14 @@ pacaur -S --noconfirm ranger
 pacaur -S --noconfirm calibre blender audacity
 
 #virtualbox
-pacaur -S --noconfirm virtualbox virtualbox-host-dkms linux-headers
-sudo dkms install vboxhost/$(pacman -Q virtualbox|awk '{print $2}'|sed 's/\-.\+//') -k $(uname -rm|sed 's/\ /\//')
-sudo gpasswd -a $USER vboxusers
-pacaur -S --noconfirm virtualbox-guest-iso net-tools
-pacaur -S --noconfirm virtualbox-ext-oracle qt4
+if [ $environment == "real" ]
+    then
+        pacaur -S --noconfirm virtualbox virtualbox-host-dkms linux-headers
+        sudo dkms install vboxhost/$(pacman -Q virtualbox|awk '{print $2}'|sed 's/\-.\+//') -k $(uname -rm|sed 's/\ /\//')
+        sudo gpasswd -a $USER vboxusers
+        pacaur -S --noconfirm virtualbox-guest-iso net-tools
+        pacaur -S --noconfirm virtualbox-ext-oracle qt4
+fi
 
 #misc
 pacaur -S --noconfirm weechat
