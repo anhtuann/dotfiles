@@ -162,5 +162,8 @@ sudo systemctl enable tlp
 #useful for generating quindal tones
 pacaur -S --noconfirm wave-git
 
+#zsh
+pacaur -S --noconfirm zsh
+
 #generate config files
 sh ~/Projects/dotfiles/dreamland/genconf.sh
