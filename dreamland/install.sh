@@ -21,13 +21,12 @@ do
 done
 
 #sort mirrors by speed
-if [ $environment == "real" ]
-    then
-        echo 'Sorting mirrors by speed'
-        sudo wget https://www.archlinux.org/mirrorlist/?country=all&protocol=http&ip_version=4 -O /etc/pacman.d/mirrorlist
-        sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-        sudo sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.bak
-        sudo sh -c 'rankmirrors -n 5 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist'
+if [ $environment == "real" ]; then
+    echo 'Sorting mirrors by speed'
+    sudo wget https://www.archlinux.org/mirrorlist/?country=all&protocol=http&ip_version=4 -O /etc/pacman.d/mirrorlist
+    sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+    sudo sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.bak
+    sudo sh -c 'rankmirrors -n 5 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist'
 else
     sudo wget https://raw.githubusercontent.com/anhtuann/dotfiles/master/dreamland/pacman_mirrorlist -O /etc/pacman.d/mirrorlist
 fi
@@ -37,17 +36,15 @@ sudo pacman -Syu --noconfirm
 
 #ssh keys
 sudo pacman -S --noconfirm openssh
-if [ $environment == "test" ]
-    then
-        ssh-keygen
+if [ $environment == "test" ]; then
+    ssh-keygen
 fi
 echo 'eval $(ssh-agent)' >> ~/.xinitrc
 
 #graphic drivers
-if [ $environment == "test" ]
-    then
-        echo 'Installing virtualbox graphic driver'
-        sudo pacman -S --noconfirm virtualbox-guest-utils
+if [ $environment == "test" ]; then
+    echo 'Installing virtualbox graphic driver'
+    sudo pacman -S --noconfirm virtualbox-guest-utils
 else
     echo 'Installing bumblebee on intel/nvidia driver'
     sudo pacman -S --noconfirm bumblebee mesa xf86-video-intel nvidia
@@ -85,9 +82,8 @@ mkdir -p ~/.config/pacaur
 echo "displaybuildfiles=none" > ~/.config/pacaur/config
 
 #bbswitch-dkms installation for bumblebee
-if [ $environment == "real" ]
-    then
-        pacaur -S --noconfirm bbswitch-dkms
+if [ $environment == "real" ]; then
+    pacaur -S --noconfirm bbswitch-dkms
 fi
 
 #fonts to install
@@ -142,23 +138,21 @@ pacaur -S --noconfirm ranger
 pacaur -S --noconfirm calibre blender audacity
 
 #virtualbox
-if [ $environment == "real" ]
-    then
-        pacaur -S --noconfirm virtualbox virtualbox-host-dkms linux-headers
-        sudo dkms install vboxhost/$(pacman -Q virtualbox|awk '{print $2}'|sed 's/\-.\+//') -k $(uname -rm|sed 's/\ /\//')
-        sudo gpasswd -a $USER vboxusers
-        pacaur -S --noconfirm virtualbox-guest-iso net-tools
-        pacaur -S --noconfirm virtualbox-ext-oracle qt4
+if [ $environment == "real" ]; then
+    pacaur -S --noconfirm virtualbox virtualbox-host-dkms linux-headers
+    sudo dkms install vboxhost/$(pacman -Q virtualbox|awk '{print $2}'|sed 's/\-.\+//') -k $(uname -rm|sed 's/\ /\//')
+    sudo gpasswd -a $USER vboxusers
+    pacaur -S --noconfirm virtualbox-guest-iso net-tools
+    pacaur -S --noconfirm virtualbox-ext-oracle qt4
 fi
 
 #misc
 pacaur -S --noconfirm weechat
 
 #power management
-if [ $environment == "real" ]
-    then
-        pacaur -S --noconfirm tlp
-        sudo systemctl enable tlp
+if [ $environment == "real" ]; then
+    pacaur -S --noconfirm tlp
+    sudo systemctl enable tlp
 fi
 
 #useful for generating quindal tones
