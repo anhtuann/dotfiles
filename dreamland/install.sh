@@ -155,8 +155,11 @@ fi
 pacaur -S --noconfirm weechat
 
 #power management
-pacaur -S --noconfirm tlp
-sudo systemctl enable tlp
+if [ $environment == "real" ]
+    then
+        pacaur -S --noconfirm tlp
+        sudo systemctl enable tlp
+fi
 
 #useful for generating quindal tones
 pacaur -S --noconfirm wave-git
