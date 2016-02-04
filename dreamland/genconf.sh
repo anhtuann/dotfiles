@@ -4,7 +4,6 @@ ln -sf ~/Projects/dotfiles/dreamland/xinitrc_conf ~/.xinitrc
 
 #vim
 ln -sf ~/Projects/dotfiles/dreamland/vimrc_conf ~/.vimrc
-mkdir -p .vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/vimwiki/vimwiki.git ~/.vim/bundle/vimwiki
 vim +PluginInstall +qall

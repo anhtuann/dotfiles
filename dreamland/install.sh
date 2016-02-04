@@ -110,7 +110,6 @@ git clone https://github.com/anhtuann/useful-scripts.git
 
 #vim
 pacaur -S --noconfirm vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 #various utilities
 pacaur -S --noconfirm alsa-utils
