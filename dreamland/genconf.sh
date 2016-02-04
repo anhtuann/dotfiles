@@ -27,8 +27,6 @@ sudo ln -sf ~/Projects/dotfiles/dreamland/virtualbox_conf /etc/modules-load.d/vi
 
 ln -sf ~/Projects/dotfiles/dreamland/asoundrc_conf ~/.asoundrc
 
-ln -sf ~/Projects/dotfiles/dreamland/zshrc_conf ~/.zshrc
-
 ln -sf ~/Projects/dotfiles/dreamland/tmux_conf ~/.tmux.conf
 
 sudo ln -sf ~/Projects/dotfiles/dreamland/bumblebee_nvidia_conf /etc/bumblebee/xorg.conf.nvidia
