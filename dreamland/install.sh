@@ -163,4 +163,5 @@ sudo systemctl enable tlp
 pacaur -S --noconfirm wave-git
 
 #generate config files
-sh ~/Projects/dotfiles/dreamland/genconf.sh
+cd ~/Projects/dotfiles/dreamland
+environment=$environment ./genconf.sh
