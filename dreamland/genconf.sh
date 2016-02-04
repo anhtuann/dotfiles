@@ -38,6 +38,7 @@ if [ $environment == "real" ]; then
 fi
 
 sudo ln -sf ~/Projects/dotfiles/dreamland/confs/pacman_conf /etc/pacman.conf
+pacaur -Syu --noconfirm
 
 mkdir ~/.config/dunst
 ln -sf ~/Projects/dotfiles/dreamland/confs/dunst_conf /home/anhtuann/.config/dunst/dunstrc
