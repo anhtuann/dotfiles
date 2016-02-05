@@ -136,6 +136,7 @@ pacaur -S --noconfirm ranger
 
 #useful softwares
 pacaur -S --noconfirm calibre blender audacity
+pacaur -S --noconfirm dropbox
 
 #virtualbox
 if [ $environment == "real" ]; then
