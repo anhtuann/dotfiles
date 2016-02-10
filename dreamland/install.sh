@@ -23,6 +23,7 @@ done
 #sort mirrors by speed
 if [ $environment == "real" ]; then
     wget https://raw.githubusercontent.com/anhtuann/useful-scripts/master/rank_arch_mirrors.sh
+    chmod u+x rank_arch_mirrors.sh
     ./rank_arch_mirrors.sh
 else
     sudo wget https://raw.githubusercontent.com/anhtuann/dotfiles/master/dreamland/pacman_mirrorlist -O /etc/pacman.d/mirrorlist
