@@ -22,11 +22,8 @@ done
 
 #sort mirrors by speed
 if [ $environment == "real" ]; then
-    echo 'Sorting mirrors by speed'
-    sudo wget https://www.archlinux.org/mirrorlist/?country=all&protocol=http&ip_version=4 -O /etc/pacman.d/mirrorlist
-    sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-    sudo sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.bak
-    sudo sh -c 'rankmirrors -n 5 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist'
+    wget https://raw.githubusercontent.com/anhtuann/useful-scripts/master/rank_arch_mirrors.sh
+    ./rank_arch_mirrors.sh
 else
     sudo wget https://raw.githubusercontent.com/anhtuann/dotfiles/master/dreamland/pacman_mirrorlist -O /etc/pacman.d/mirrorlist
 fi
