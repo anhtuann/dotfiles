@@ -32,13 +32,6 @@ fi
 #update arch
 sudo pacman -Syu --noconfirm
 
-#ssh keys
-sudo pacman -S --noconfirm openssh
-if [ $environment == "test" ]; then
-    ssh-keygen
-fi
-echo 'eval $(ssh-agent)' >> ~/.xinitrc
-
 #graphic drivers
 if [ $environment == "test" ]; then
     echo 'Installing virtualbox graphic driver'
@@ -68,7 +61,7 @@ mkdir /tmp/aur
 cd /tmp/aur
 git clone http://aur.archlinux.org/cower.git
 git clone http://aur.archlinux.org/pacaur.git
-gpg --recv-keys 1EB2638FF56C0C53
+gpg --keyserver pgp.mit.edu --recv-keys F56C0C53
 cd cower
 makepkg -s
 sudo pacman -U --noconfirm cower*.pkg.tar.xz
