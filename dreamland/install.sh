@@ -90,7 +90,7 @@ pacaur -S --noconfirm rofi scrot feh volumeicon dunst
 #dotfiles downloaded from github
 mkdir ~/Projects 
 cd ~/Projects
-git clone https://github.com/anhtuann/dotfiles.git
+git clone -b clean_gpg https://github.com/anhtuann/dotfiles.git
 
 #useful scripts downloaded from github
 git clone https://github.com/anhtuann/useful-scripts.git
