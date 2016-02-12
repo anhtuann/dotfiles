@@ -28,7 +28,7 @@ ln -sf ~/Projects/dotfiles/dreamland/confs/asoundrc_conf ~/.asoundrc
 ln -sf ~/Projects/dotfiles/dreamland/confs/tmux_conf ~/.tmux.conf
 
 if [ $environment == "real" ]; then
-    sudo ln -sf /home/anhtuann/Projects/dotfiles/dreamland/confs/bumblebee_conf /etc/bumblebee/bumblebee.conf
+    sudo ln -sf ~/Projects/dotfiles/dreamland/confs/bumblebee_conf /etc/bumblebee/bumblebee.conf
     sudo ln -sf ~/Projects/dotfiles/dreamland/confs/bumblebee_nvidia_conf /etc/bumblebee/xorg.conf.nvidia
     sudo ln -sf ~/Projects/dotfiles/dreamland/confs/tlp_conf /etc/default/tlp
     sudo systemctl enable tlp.service
@@ -41,7 +41,7 @@ sudo ln -sf ~/Projects/dotfiles/dreamland/confs/pacman_conf /etc/pacman.conf
 pacaur -Syu --noconfirm
 
 mkdir ~/.config/dunst
-ln -sf ~/Projects/dotfiles/dreamland/confs/dunst_conf /home/anhtuann/.config/dunst/dunstrc
+ln -sf ~/Projects/dotfiles/dreamland/confs/dunst_conf ~/.config/dunst/dunstrc
 
 ranger --copy-config=all
-ln -sf /home/anhtuann/Projects/dotfiles/dreamland/confs/ranger_rifle_conf /home/anhtuann/.config/ranger/rifle.conf
+ln -sf ~/Projects/dotfiles/dreamland/confs/ranger_rifle_conf ~/.config/ranger/rifle.conf
