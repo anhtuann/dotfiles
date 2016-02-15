@@ -21,3 +21,14 @@ echo "displaybuildfiles=none" > ~/.config/pacaur/config
 
 #various utilities
 pacaur -S --noconfirm tmux
+
+#installing modules
+cd ~/Projects/dotfiles/sandman/other_installs
+./mariadb.sh
+./nginx.sh
+./wordpress.sh
+./zsh.sh
+
+#generate config files
+cd ~/Projects/dotfiles/sandman
+./genconf.sh
