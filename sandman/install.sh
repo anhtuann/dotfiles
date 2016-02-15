@@ -1,6 +1,7 @@
 #tools to compile packages
 sudo pacman -S --noconfirm base-devel
 sudo pacman -S --noconfirm git
+sudo pacman -S --noconfirm wget
 
 #pacaur install
 sudo pacman -S --noconfirm expac
