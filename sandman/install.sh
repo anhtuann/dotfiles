@@ -18,3 +18,6 @@ sudo pacman -U --noconfirm pacaur*.pkg.tar.xz
 cd
 mkdir -p ~/.config/pacaur
 echo "displaybuildfiles=none" > ~/.config/pacaur/config
+
+#various utilities
+pacaur -S --noconfirm tmux
