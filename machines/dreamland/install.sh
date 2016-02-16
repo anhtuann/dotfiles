@@ -17,3 +17,10 @@ env=$env ./genconf.sh
 #install zsh shell
 cd ~/Projects/dotfiles/scripts/arch
 machine=$machine ./zsh.sh
+
+if [ $env=="real" ]; then
+    cd ~/Projects/dotfiles/scripts/arch/laptop
+    ./android.sh
+    ./bluetooth.sh
+    ./playonlinux.sh
+fi
