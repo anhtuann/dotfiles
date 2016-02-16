@@ -1,4 +1,4 @@
-sudo pacman -S --noconfirm expac
+sudo pacman -S --noconfirm expac yajl
 mkdir /tmp/aur
 cd /tmp/aur
 git clone http://aur.archlinux.org/cower.git
