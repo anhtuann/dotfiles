@@ -28,8 +28,8 @@ printf "You chose to make a %s install for the %s machine" "$environment" "$mach
 
 #Tools needed
 sudo pacman -S --noconfirm git wget
-mkdir Projects
-cd Projects
+mkdir ~/Projects
+cd ~/Projects
 git clone https://github.com/anhtuann/dotfiles.git
 
 
