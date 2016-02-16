@@ -17,33 +17,28 @@ options=("test" "real")
 select opt in "${options[@]}";
 do
     if [[ -n $opt ]]; then
-        environment=$opt
+        env=$opt
         break
     else
         echo "invalid option"
     fi
 done
 
-printf "You chose to make a %s install for the %s machine" "$environment" "$machine"
+printf "You chose to make a %s install for the %s machine" "$env" "$machine"
 
-#Tools needed
-sudo pacman -S --noconfirm git wget
+git config --global push.default simple
 mkdir ~/Projects
 cd ~/Projects
 git clone https://github.com/anhtuann/dotfiles.git
+cd ~/Projects/dotfiles
+git checkout refactor
 
-
-#Update and optimize mirrorlist for pacman
-#Code taken from a linode stackscript and added sudo to it
-#https://www.linode.com/stackscripts/view/12580
-sudo pacman -Sy --noconfirm reflector
-sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.old
-sudo wget https://www.archlinux.org/mirrorlist/all/ -O /etc/pacman.d/mirrorlist
-sudo reflector --protocol http --sort rate --fastest 6 --threads 10 --save /etc/pacman.d/mirrorlist
-
-#Update system
-sudo pacman -Syu --noconfirm
+if [[ $machine=="dreamland" ]] || [[ $machine=="sandman"]]; then
+    ./scripts/arch/preparation.sh
+    ./scripts/arch/pacaur.sh
+    ./scripts/arch/cli_tools.sh
 
 #Activate good script
-cd ~/Projects/dotfiles/$machine
-environment=$environment ./install.sh 
+cd ~/Projects/dotfiles/machines/$machine
+env=$env ./install.sh 
+
