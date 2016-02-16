@@ -16,7 +16,7 @@ PS3='Is it a test install or the real deal ? : '
 options=("test" "real")
 select opt in "${options[@]}";
 do
-    if [[ -n $opt ]]; then
+    if [ -n $opt ]; then
         env=$opt
         break
     else
@@ -33,10 +33,11 @@ git clone https://github.com/anhtuann/dotfiles.git
 cd ~/Projects/dotfiles
 git checkout refactor
 
-if [[ $machine=="dreamland" ]] || [[ $machine=="sandman"]]; then
+if [ $machine=="dreamland" ] || [ $machine=="sandman"]; then
     ./scripts/arch/preparation.sh
     ./scripts/arch/pacaur.sh
     ./scripts/arch/cli_tools.sh
+fi
 
 #Activate good script
 cd ~/Projects/dotfiles/machines/$machine
