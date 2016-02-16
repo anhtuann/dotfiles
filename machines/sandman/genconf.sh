@@ -5,6 +5,6 @@ vim +PluginInstall +qall
 
 ln -sf ~/Projects/dotfiles/machines/sandman/confs/tmux_conf ~/.tmux.conf
 
-sudo ln -sf ~/Projects/dotfiles/machines/$machine/confs/nginx_conf /etc/nginx/nginx.conf
+sudo ln -sf ~/Projects/dotfiles/machines/sandman/confs/nginx_conf /etc/nginx/nginx.conf
 
-sudo ln -sf ~/Projects/dotfiles/sandman/confs/phpini_conf /etc/php/php.ini
+sudo ln -sf ~/Projects/dotfiles/machines/sandman/confs/phpini_conf /etc/php/php.ini
