@@ -1,14 +1,14 @@
 printf "Executing %s install on mode %s" "$machine" "$env"
 
 cd ~/Projects/dotfiles/scripts/arch
-env=$env ./graphic_drivers.sh
-env=$env ./virtualbox.sh
-env=$env ./hardware.sh
-./window_manager.sh
+env=$env ./laptop/graphic_drivers.sh
+env=$env ./laptop/virtualbox.sh
+env=$env ./laptop/hardware.sh
+./laptop/window_manager.sh
 ./fonts.sh
-./web.sh
+./laptop/web.sh
 ./python.sh
-./various_softwares.sh
+./laptop/various_softwares.sh
 
 #generate config files
 cd ~/Projects/dotfiles/machines/dreamland
