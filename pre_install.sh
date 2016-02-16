@@ -43,3 +43,7 @@ sudo reflector --protocol http --sort rate --fastest 6 --threads 10 --save /etc/
 
 #Update system
 sudo pacman -Syu --noconfirm
+
+#Activate good script
+cd ~/Projects/dotfiles/$machine
+environment=$environment ./install.sh 
