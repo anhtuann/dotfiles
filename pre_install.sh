@@ -24,7 +24,11 @@ do
     fi
 done
 
-printf "You chose to make a %s install for the %s machine" "$env" "$machine"
+#logging
+exec > >(tee -i ~/install_log.txt)
+exec 2>&1
+
+printf "You chose to make a %s install for the %s machine\n" "$env" "$machine"
 
 git config --global push.default simple
 mkdir ~/Projects
@@ -42,4 +46,5 @@ fi
 #Activate good script
 cd ~/Projects/dotfiles/machines/$machine
 env=$env ./install.sh 
+
 

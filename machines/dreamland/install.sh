@@ -1,6 +1,4 @@
-#logging
-exec > >(tee -i install_log.txt)
-exec 2>&1
+printf "Executing %s install on mode %s" "$machine" "$env"
 
 cd ~/Projects/dotfiles/scripts/arch
 env=$env ./graphic_drivers.sh
