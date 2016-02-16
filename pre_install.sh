@@ -35,7 +35,6 @@ mkdir ~/Projects
 cd ~/Projects
 git clone https://github.com/anhtuann/dotfiles.git
 cd ~/Projects/dotfiles
-git checkout refactor
 
 if [ $machine=="dreamland" ] || [ $machine=="sandman"]; then
     ./scripts/arch/preparation.sh
