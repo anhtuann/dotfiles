@@ -1,4 +1,4 @@
-if [ $environment == "real" ]; then
+if [ $environment == "real" ] then
     pacaur -S --noconfirm virtualbox virtualbox-host-dkms linux-headers
     sudo dkms install vboxhost/$(pacman -Q virtualbox|awk '{print $2}'|sed 's/\-.\+//') -k $(uname -rm|sed 's/\ /\//')
     sudo gpasswd -a $USER vboxusers
