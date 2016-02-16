@@ -5,6 +5,7 @@ env=$env ./graphic_drivers.sh
 env=$env ./virtualbox.sh
 env=$env ./hardware.sh
 ./window_manager.sh
+./fonts.sh
 ./web.sh
 ./python.sh
 ./various_softwares.sh
