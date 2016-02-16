@@ -45,6 +45,6 @@ fi
 
 #Activate good script
 cd ~/Projects/dotfiles/machines/$machine
-env=$env ./install.sh 
+machine=$machine env=$env ./install.sh 
 
 

@@ -12,3 +12,7 @@ env=$env ./hardware.sh
 #generate config files
 cd ~/Projects/dotfiles/machines/dreamland
 env=$env ./genconf.sh
+
+#install zsh shell
+cd ~/Projects/dotfiles/scripts/arch
+machine=$machine ./zsh.sh
