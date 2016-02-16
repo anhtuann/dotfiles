@@ -5,7 +5,7 @@ cd ~/Projects/dotfiles/scripts/arch/server
 ./wordpress.sh
 
 #generate config files
-cd ~/Projects/dotfiles/sandman
+cd ~/Projects/dotfiles/machines/sandman
 ./genconf.sh
 
 cd ~/Projects/dotfiles/scripts/arch
