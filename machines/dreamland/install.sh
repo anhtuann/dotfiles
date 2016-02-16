@@ -2,7 +2,7 @@
 exec > >(tee -i install_log.txt)
 exec 2>&1
 
-cd ~/Projects/dotfiles/script/arch
+cd ~/Projects/dotfiles/scripts/arch
 env=$env ./graphic_drivers.sh
 env=$env ./virtualbox.sh
 env=$env ./hardware.sh
