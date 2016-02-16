@@ -5,7 +5,7 @@ env=$env ./graphic_drivers.sh
 env=$env ./virtualbox.sh
 env=$env ./hardware.sh
 ./window_manager.sh
-./various_software.sh
+./various_softwares.sh
 
 #generate config files
 cd ~/Projects/dotfiles/machines/dreamland
