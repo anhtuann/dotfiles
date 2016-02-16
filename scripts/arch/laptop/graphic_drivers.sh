@@ -1,5 +1,5 @@
 #graphic drivers
-if [ $env == "test" ] then
+if [ $env == "test" ]; then
     echo 'Installing virtualbox graphic driver'
     pacaur -S --noconfirm virtualbox-guest-utils
 else
