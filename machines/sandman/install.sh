@@ -3,6 +3,7 @@ cd ~/Projects/dotfiles/scripts/arch
 ./server/mariadb.sh
 ./server/nginx.sh
 ./server/wordpress.sh
+machine=$machine ./syncplay.sh
 ./shell.sh
 
 #generate config files

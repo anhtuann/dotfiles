@@ -9,6 +9,7 @@ env=$env ./laptop/hardware.sh
 ./laptop/web.sh
 ./python.sh
 ./laptop/various_softwares.sh
+./syncplay.sh
 ./shell.sh
 
 if [ $env == "real" ]; then
