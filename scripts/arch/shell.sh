@@ -1,0 +1,1 @@
+pacaur -S --noconfirm zsh

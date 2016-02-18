@@ -9,14 +9,7 @@ env=$env ./laptop/hardware.sh
 ./laptop/web.sh
 ./python.sh
 ./laptop/various_softwares.sh
-
-#generate config files
-cd ~/Projects/dotfiles/machines/dreamland
-env=$env ./firstconfig.sh
-
-#install zsh shell
-cd ~/Projects/dotfiles/scripts/arch
-machine=$machine ./zsh.sh
+./shell.sh
 
 if [ $env == "real" ]; then
     cd ~/Projects/dotfiles/scripts/arch/laptop
@@ -24,3 +17,7 @@ if [ $env == "real" ]; then
     ./bluetooth.sh
     ./playonlinux.sh
 fi
+
+#generate config files
+cd ~/Projects/dotfiles/machines/dreamland
+env=$env ./firstconfig.sh

@@ -13,8 +13,12 @@ mkdir ~/.config/dunst
 
 ranger --copy-config=all
 
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
 if [ $environment == "real" ]; then
     sudo systemctl enable tlp.service
     sudo systemctl enable tlp-sleep.service
     sudo systemctl disable systemd-rfkill.service
 fi
+
+./gensymlink.sh

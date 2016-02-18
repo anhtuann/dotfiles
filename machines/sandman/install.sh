@@ -1,12 +1,10 @@
 #installing modules
 cd ~/Projects/dotfiles/scripts/arch/server
-./mariadb.sh
-./nginx.sh
-./wordpress.sh
+./server/mariadb.sh
+./server/nginx.sh
+./server/wordpress.sh
+./shell.sh
 
 #generate config files
 cd ~/Projects/dotfiles/machines/sandman
-./genconf.sh
-
-cd ~/Projects/dotfiles/scripts/arch
-machine=$machine ./zsh.sh
+./firstconfig.sh
