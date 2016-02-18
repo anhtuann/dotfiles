@@ -1,5 +1,5 @@
 #installing modules
-cd ~/Projects/dotfiles/scripts/arch/server
+cd ~/Projects/dotfiles/scripts/arch
 ./server/mariadb.sh
 ./server/nginx.sh
 ./server/wordpress.sh
