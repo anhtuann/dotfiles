@@ -36,7 +36,7 @@ cd ~/Projects
 git clone https://github.com/anhtuann/dotfiles.git
 cd ~/Projects/dotfiles
 
-if [ $machine=="dreamland" ] || [ $machine=="sandman"]; then
+if [ $machine == "dreamland" ] || [ $machine == "sandman" ]; then
     ./scripts/arch/preparation.sh
     ./scripts/arch/pacaur.sh
     ./scripts/arch/cli_tools.sh
