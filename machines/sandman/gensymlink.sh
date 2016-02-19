@@ -4,3 +4,4 @@ ln -sf ~/Projects/dotfiles/machines/sandman/confs/zshrc_conf ~/.zshrc
 
 sudo ln -sf ~/Projects/dotfiles/machines/sandman/confs/nginx_conf /etc/nginx/nginx.conf
 sudo ln -sf ~/Projects/dotfiles/machines/sandman/confs/phpini_conf /etc/php/php.ini
+sudo ln -sf ~/Projects/dotfiles/machines/sandman/confs/pacman_conf /etc/pacman.conf
