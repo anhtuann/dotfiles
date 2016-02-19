@@ -13,7 +13,7 @@ ln -sf ~/Projects/dotfiles/machines/dreamland/confs/zshrc_conf ~/.zshrc
 sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/libinput_conf /etc/X11/xorg.conf.d/50-touchpad.conf
 sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/pacman_conf /etc/pacman.conf
 
-if ! pacaur -Qi virtualbox-guest-utils > /dev/null; then
+if ! pacaur -Qi virtualbox-guest-utils > /dev/null 2>&1; then
     echo "We are on a real machine. Symlinking hardware confs files"
     ln -sf ~/Projects/dotfiles/machines/dreamland/confs/asoundrc_conf ~/.asoundrc
     sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/bumblebee_conf /etc/bumblebee/bumblebee.conf
