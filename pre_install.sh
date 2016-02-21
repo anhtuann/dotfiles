@@ -39,7 +39,7 @@ cd ~/Projects/dotfiles
 if [ $machine == "dreamland" ] || [ $machine == "sandman" ]; then
     ./scripts/arch/preparation.sh
     ./scripts/arch/pacaur.sh
-    ./scripts/arch/cli_tools.sh
+    machine=$machine ./scripts/arch/cli_tools.sh
 fi
 
 #Activate good script
