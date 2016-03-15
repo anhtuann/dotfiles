@@ -8,6 +8,7 @@ ln -sf ~/Projects/dotfiles/machines/dreamland/confs/vimperatorrc_conf ~/.vimpera
 ln -sf ~/Projects/dotfiles/machines/dreamland/confs/tmux_conf ~/.tmux.conf
 ln -sf ~/Projects/dotfiles/machines/dreamland/confs/dunst_conf ~/.config/dunst/dunstrc
 ln -sf ~/Projects/dotfiles/machines/dreamland/confs/ranger_rifle_conf ~/.config/ranger/rifle.conf
+ln -sf ~/Projects/dotfiles/machines/dreamland/confs/ranger_rc_conf ~/.config/ranger/rc.conf
 ln -sf ~/Projects/dotfiles/machines/dreamland/confs/zshrc_conf ~/.zshrc
 
 sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/libinput_conf /etc/X11/xorg.conf.d/50-touchpad.conf
