@@ -20,7 +20,6 @@ bind a send-prefix
 
 # start numbering at 1, which eases window switch by number (C-a 1, C-a 2)
 set -g base-index 1      
-set -g status-utf8 on
 
 # screen ^C c 
 unbind ^C
