@@ -1,3 +1,4 @@
+pacaur -S --noconfirm gparted
 pacaur -S --noconfirm alsa-utils
 pacaur -S --noconfirm xclip
 pacaur -S --noconfirm mpv
