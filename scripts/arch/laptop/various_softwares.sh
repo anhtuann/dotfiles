@@ -10,3 +10,7 @@ pacaur -S --noconfirm weechat
 
 #useful for generating quindal tones
 pacaur -S --noconfirm wave-git
+
+#file manager
+pacaur -S --noconfirm thunar thunar-volman thunar-archive-plugin
+pacaur -S --noconfirm gvfs tumbler
