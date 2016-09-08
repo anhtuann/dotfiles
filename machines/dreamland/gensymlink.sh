@@ -10,6 +10,7 @@ ln -sf ~/Projects/dotfiles/machines/dreamland/confs/dunst_conf ~/.config/dunst/d
 ln -sf ~/Projects/dotfiles/machines/dreamland/confs/ranger_rifle_conf ~/.config/ranger/rifle.conf
 ln -sf ~/Projects/dotfiles/machines/dreamland/confs/ranger_rc_conf ~/.config/ranger/rc.conf
 ln -sf ~/Projects/dotfiles/machines/dreamland/confs/zshrc_conf ~/.zshrc
+ln -sf ~/Projects/dotfiles/machines/dreamland/confs/mpv.conf ~/.config/mpv/mpv.conf
 
 sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/libinput_conf /etc/X11/xorg.conf.d/50-touchpad.conf
 sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/pacman_conf /etc/pacman.conf
