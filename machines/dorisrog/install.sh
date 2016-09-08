@@ -9,7 +9,6 @@ env=$env ./laptop/hardware.sh
 ./laptop/web.sh
 ./python.sh
 ./laptop/various_softwares.sh
-./syncplay.sh
 ./shell.sh
 
 if [ $env == "real" ]; then
@@ -20,8 +19,5 @@ if [ $env == "real" ]; then
 fi
 
 #generate config files
-cd ~/Projects/dotfiles/machines/dreamland
+cd ~/Projects/dotfiles/machines/$machine
 env=$env ./firstconfig.sh
-mkdir /home/anhtuann/.config/dunst
-ln -sf /home/anhtuann/Projects/dotfiles/machines/dreamland/confs/dunst_conf /home/anhtuann/.config/dunst/dunstrc
-pacaur -S zsh
