@@ -1,7 +1,7 @@
 #Option configuration
 
 PS3='Type index of machine you want to install : '
-options=("dreamland" "sandman")
+options=("dreamland" "sandman" "dorisrog")
 select opt in "${options[@]}";
 do
     if [[ -n $opt ]]; then
@@ -35,12 +35,11 @@ mkdir ~/Projects
 cd ~/Projects
 git clone https://github.com/anhtuann/dotfiles.git
 cd ~/Projects/dotfiles
+git checkout dorisrog
 
-if [ $machine == "dreamland" ] || [ $machine == "sandman" ]; then
-    ./scripts/arch/preparation.sh
-    ./scripts/arch/pacaur.sh
-    machine=$machine ./scripts/arch/cli_tools.sh
-fi
+./scripts/arch/preparation.sh
+./scripts/arch/pacaur.sh
+machine=$machine ./scripts/arch/cli_tools.sh
 
 #Activate good script
 cd ~/Projects/dotfiles/machines/$machine
