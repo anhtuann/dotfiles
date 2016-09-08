@@ -1,8 +1,8 @@
 sudo pacman -S --noconfirm expac yajl
 mkdir /tmp/aur
 cd /tmp/aur
-git clone http://aur.archlinux.org/cower.git
-git clone http://aur.archlinux.org/pacaur.git
+git clone https://aur.archlinux.org/cower.git
+git clone https://aur.archlinux.org/pacaur.git
 gpg --keyserver pgp.mit.edu --recv-keys F56C0C53
 cd cower
 makepkg -s
