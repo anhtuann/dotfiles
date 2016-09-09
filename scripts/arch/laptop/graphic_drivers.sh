@@ -1,7 +1,7 @@
 #graphic drivers
 if [ $env == "test" ]; then
     echo 'Installing virtualbox graphic driver'
-    pacaur -S --noconfirm virtualbox-guest-utils
+    pacaur -S virtualbox-guest-utils
 else
     echo 'Installing bumblebee on intel/nvidia driver'
     pacaur -S --noconfirm bumblebee mesa xf86-video-intel nvidia
