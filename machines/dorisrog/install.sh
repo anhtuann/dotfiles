@@ -4,6 +4,7 @@ cd ~/Projects/dotfiles/scripts/arch
 env=$env ./laptop/graphic_drivers.sh
 env=$env ./laptop/virtualbox.sh
 env=$env ./laptop/hardware.sh
+env=$env ./virtualbox_guest.sh
 ./laptop/window_manager.sh
 ./fonts.sh
 ./laptop/web.sh
