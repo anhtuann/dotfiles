@@ -1,11 +1,12 @@
 printf "Executing %s install on mode %s" "$machine" "$env"
 
 cd ~/Projects/dotfiles/scripts/arch
-env=$env ./virtualbox_guest.sh
-env=$env ./laptop/graphic_drivers.sh
-env=$env ./laptop/virtualbox.sh
+env=$env ./virtualbox/virtualbox_guest.sh
+./graphics/nvidia.sh
+./graphics/x_server.sh
+env=$env ./virtualbox/virtualbox_host.sh
 env=$env ./laptop/hardware.sh
-./laptop/window_manager.sh
+./with_x_server/window_manager.sh
 ./fonts.sh
 ./laptop/web.sh
 ./python.sh
