@@ -1,24 +1,24 @@
 printf "Executing %s install on mode %s" "$machine" "$env"
-
 cd ~/Projects/dotfiles/scripts/arch
-env=$env ./virtualbox/virtualbox_guest.sh
+env=$env ./remote/virtualbox_guest.sh
 ./graphics/nvidia.sh
 ./graphics/x_server.sh
-env=$env ./virtualbox/virtualbox_host.sh
-env=$env ./laptop/hardware.sh
-./with_x_server/window_manager.sh
+env=$env ./remote/virtualbox_host.sh
+./remote/ssh.sh
+./hardware/mouse_input.sh
+./hardware/network.sh
+./desktop_environment/i3_env.sh
+./desktop_environment/filesystem_management.sh
+./desktop_environment/color_config.sh
 ./fonts.sh
-./laptop/web.sh
-./python.sh
-./laptop/various_softwares.sh
+./cli_tools.sh
+./web/browser.sh
+./web/dropbox.sh
+./web/skype.sh
+./web/torrent.sh
+./multimedia/media_essentials.sh
+./multimedia/media_optionals.sh
 ./shell.sh
-
-if [ $env == "real" ]; then
-    cd ~/Projects/dotfiles/scripts/arch/laptop
-    ./android.sh
-    ./bluetooth.sh
-    ./playonlinux.sh
-fi
 
 #generate config files
 cd ~/Projects/dotfiles/machines/$machine
