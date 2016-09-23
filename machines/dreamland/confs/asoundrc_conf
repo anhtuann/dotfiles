@@ -5,7 +5,7 @@ defaults.pcm.card 1;
 #      type hw
 #      card 0
 #      device 3
-# }
+#}
 
 #ctl.!default {
 #    type hw
