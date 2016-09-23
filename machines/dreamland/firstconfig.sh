@@ -21,4 +21,6 @@ if [ $environment == "real" ]; then
     sudo systemctl disable systemd-rfkill.service
 fi
 
+source ~/.zshrc
+base16_3024
 ./gensymlink.sh
