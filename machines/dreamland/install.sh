@@ -1,22 +1,30 @@
 printf "Executing %s install on mode %s" "$machine" "$env"
-
 cd ~/Projects/dotfiles/scripts/arch
-env=$env ./laptop/graphic_drivers.sh
-env=$env ./laptop/virtualbox.sh
-env=$env ./laptop/hardware.sh
-./laptop/window_manager.sh
+env=$env ./remote/virtualbox_guest.sh
+./graphics/bumblebee.sh
+./graphics/x_server.sh
+env=$env ./remote/virtualbox_host.sh
+./remote/ssh.sh
+./hardware/mouse_input.sh
+./hardware/network.sh
+env=$env ./hardware/laptop_power_management.sh
+./hardware/sound.sh
+./desktop_environment/i3_env.sh
+./desktop_environment/filesystem_management.sh
+./desktop_environment/color_config.sh
 ./fonts.sh
-./laptop/web.sh
+./cli_tools.sh
+./web/browser.sh
+./web/dropbox.sh
+./web/skype.sh
+./web/torrent.sh
 ./python.sh
-./laptop/various_softwares.sh
-./syncplay.sh
+./multimedia/media_essentials.sh
+./multimedia/media_optionals.sh
 ./shell.sh
 
 if [ $env == "real" ]; then
-    cd ~/Projects/dotfiles/scripts/arch/laptop
-    ./android.sh
-    ./bluetooth.sh
-    ./playonlinux.sh
+    ./hardware/bluetooth.sh
 fi
 
 #generate config files
