@@ -21,6 +21,7 @@ env=$env ./hardware/laptop_power_management.sh
 ./coding/python.sh
 ./multimedia/media_essentials.sh
 ./multimedia/media_optionals.sh
+./multimedia/dj.sh
 ./shell.sh
 
 if [ $env == "real" ]; then
