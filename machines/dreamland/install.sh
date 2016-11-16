@@ -19,6 +19,8 @@ env=$env ./hardware/laptop_power_management.sh
 ./web/skype.sh
 ./web/torrent.sh
 ./coding/python.sh
+./coding/general.sh
+./coding/database.sh
 ./multimedia/media_essentials.sh
 ./multimedia/media_optionals.sh
 ./multimedia/dj.sh
