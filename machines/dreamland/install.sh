@@ -16,14 +16,13 @@ env=$env ./hardware/laptop_power_management.sh
 ./cli_tools.sh
 ./web/browser.sh
 ./web/dropbox.sh
-./web/skype.sh
 ./web/torrent.sh
 ./coding/python.sh
+./coding/processing.sh
 ./coding/general.sh
 ./coding/database.sh
 ./multimedia/media_essentials.sh
 ./multimedia/media_optionals.sh
-./multimedia/dj.sh
 ./shell.sh
 
 if [ $env == "real" ]; then
