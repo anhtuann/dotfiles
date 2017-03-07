@@ -1,4 +1,4 @@
-pacaur -S --noconfirm bluez bluez-utils blueman
+pacaur -S --noconfirm bluez bluez-utils bluez-libs bluez-firmware blueman
 sudo modprobe btusb
 sudo systemctl enable bluetooth.service
 connmanctl enable bluetooth
