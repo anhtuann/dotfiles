@@ -17,7 +17,6 @@ sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/pacman_conf /etc/pacman
 
 if ! pacaur -Qi virtualbox-guest-utils > /dev/null 2>&1; then
     echo "We are on a real machine. Symlinking hardware confs files"
-    ln -sf ~/Projects/dotfiles/machines/dreamland/confs/asoundrc_conf ~/.asoundrc
     sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/bumblebee_conf /etc/bumblebee/bumblebee.conf
     sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/bumblebee_nvidia_conf /etc/bumblebee/xorg.conf.nvidia
     sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/tlp_conf /etc/default/tlp
