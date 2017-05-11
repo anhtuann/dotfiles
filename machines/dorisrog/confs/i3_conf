@@ -146,7 +146,7 @@ bar {
 ####################
 # STARTUP PROGRAMS #
 ####################
-set $libinput $HOME/Projects/useful-scripts/libinput.sh
+set $libinput $HOME/Projects/dotfiles/scripts/arch/desktop_environment/libinput.sh
 exec --no-startup-id ibus-daemon -drx
 exec --no-startup-id udiskie -s
 exec --no-startup-id xrdb ~/.Xresources
