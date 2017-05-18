@@ -140,7 +140,7 @@ bindsym $mod+Tab mode "$mode_system"
 bar {
         status_command i3status
         position top
-        font xft:Hack 11 
+        font xft:Hack 12 
 }
 
 ####################
