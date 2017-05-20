@@ -8,6 +8,10 @@ URxvt.transparent: true
 URxvt.shading: 15
 URxvt.background: #181818
 
+!ibus
+URxvt.inputMethod: ibus
+URxvt.preeditType: OverTheSpot
+
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
 
