@@ -55,10 +55,10 @@ AllowFallbackToIGC=false
 KernelDriver=nvidia
 PMMethod=bbswitch
 # colon-separated path to the nvidia libraries
-LibraryPath=/usr/lib/nvidia:/usr/lib32/nvidia
+LibraryPath=/usr/lib/nvidia:/usr/lib32/nvidia:/usr/lib:/usr/lib32
 # comma-separated path of the directory containing nvidia_drv.so and the
 # default Xorg modules path
-XorgModulePath=/usr/lib/nvidia/xorg/,/usr/lib/xorg/modules
+XorgModulePath=/usr/lib/nvidia/xorg,/usr/lib/xorg/modules
 XorgConfFile=/etc/bumblebee/xorg.conf.nvidia
 
 ## Section with nouveau driver specific options, only parsed if Driver=nouveau
