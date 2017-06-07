@@ -12,6 +12,11 @@ ln -sf ~/Projects/dotfiles/machines/dreamland/confs/ranger_rc_conf ~/.config/ran
 ln -sf ~/Projects/dotfiles/machines/dreamland/confs/zshrc_conf ~/.zshrc
 ln -sf ~/Projects/dotfiles/machines/dreamland/confs/mpv.conf ~/.config/mpv/mpv.conf
 
+mkdir ~/.screenlayout
+ln -sf ~/Projects/useful-scripts/screenlayout/gt7510.sh ~/.screenlayout/gt7510.sh
+ln -sf ~/Projects/useful-scripts/screenlayout/standard.sh ~/.screenlayout/standard.sh
+sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/virtualoutput_conf /etc/X11/xorg.conf.d/60-virtualoutput.conf
+
 sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/libinput_conf /etc/X11/xorg.conf.d/50-touchpad.conf
 sudo ln -sf ~/Projects/dotfiles/machines/dreamland/confs/pacman_conf /etc/pacman.conf
 
