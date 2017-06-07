@@ -1,1 +1,0 @@
-pacaur -S --noconfirm tigervnc
