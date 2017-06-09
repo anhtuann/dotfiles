@@ -1,5 +1,16 @@
 #Option configuration
 
+PS3='Be sure you already installed the ssh key otherwise git clones would fail : '
+options=("y" "n")
+select opt in "${options[@]}";
+do
+    if [[ -n $opt ]]; then
+        break
+    else
+        echo "invalid option"
+    fi
+done
+
 PS3='Type index of machine you want to install : '
 options=("dreamland" "sandman" "dorisrog")
 select opt in "${options[@]}";
@@ -33,7 +44,7 @@ printf "You chose to make a %s install for the %s machine\n" "$env" "$machine"
 git config --global push.default simple
 mkdir ~/Projects
 cd ~/Projects
-git clone https://github.com/anhtuann/dotfiles.git
+git clone git@anhtuann.com:anhtuann/dotfiles.git
 cd ~/Projects/dotfiles
 git checkout dorisrog
 

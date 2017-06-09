@@ -10,4 +10,4 @@ pacaur -S --noconfirm gvfs tumbler
 pacaur -S --noconfirm xclip
 
 #useful scripts downloaded from github
-git clone https://github.com/anhtuann/useful-scripts.git
+git clone git@anhtuann.com:anhtuann/useful-scripts.git
