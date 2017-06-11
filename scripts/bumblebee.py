@@ -10,7 +10,8 @@ if choices.INSTALL_ENV != 'virtualbox':
     tools.pacaur(packages)
     command = 'sudo gpasswd -a $USER bumblebee'
     tools.bash_cmd(command.split(' '), shell=True)
-    command = 'sudo systemctl enable bumblebeed.service'    tools.bash_cmd(command.split(' '), shell=True)
+    command = 'sudo systemctl enable bumblebeed.service'    
+    tools.bash_cmd(command.split(' '), shell=True)
     tools.pacaur(['bbswitch-dkms'])
 
 #CONFIGURATION
