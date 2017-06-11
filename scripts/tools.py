@@ -53,6 +53,9 @@ def makepkg(package):
     bash_cmd(['makepkg', '-s'])
     pacman(glob.glob(package), makepkg=True)
 
+def mkdir(path):
+    bash_cmd(['mkdir', '-p', path])
+
 def link_conf(source, link):
     # need shell True to use tilde wildcard in symlinks
     bash_cmd(['ln','-s', source, link], shell=True)
