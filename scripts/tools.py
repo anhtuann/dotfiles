@@ -58,6 +58,10 @@ def makepkg(package):
 def mkdir(path):
     bash_cmd(['mkdir', '-p', path])
 
-def link_conf(source, link):
+def link_conf(source, link, sudo = False):
     # need shell True to use tilde wildcard in symlinks
-    bash_cmd(['ln','-s', source, link], shell=True)
+    command = ['sudo', 'ln', '-s', source, link]
+    if sudo == False:
+        bash_cmd(command[1:], shell=True)
+    else:
+        bash_cmd(command, shell=True)
