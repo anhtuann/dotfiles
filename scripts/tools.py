@@ -33,5 +33,5 @@ def git_clone(repository):
 
 def makepkg(package):
     bash_cmd(['makepkg', '-s'])
-    pacman(list(package), makepkg=True)
+    pacman([package], makepkg=True)
 
