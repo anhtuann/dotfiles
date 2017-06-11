@@ -30,4 +30,4 @@ tools.link_conf('~/Projects/dotfiles/confs/i3_conf','~/.config/i3/config')
 tools.link_conf('~/Projects/dotfiles/confs/i3status_conf', '~/.config/i3status/config')
 tools.link_conf('~/Projects/dotfiles/confs/Xresources_conf', '~/.Xresources')
 tools.link_conf('~/Projects/dotfiles/confs/volumeicon_conf', '~/.config/volumeicon/volumeicon')
-tools.link_conf('~/Projects/dotfiles/confs/dunst_conf','~/.config/dunst/dunstrc'
+tools.link_conf('~/Projects/dotfiles/confs/dunst_conf','~/.config/dunst/dunstrc')
