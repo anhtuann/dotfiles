@@ -4,6 +4,7 @@ import tools
 packages = ['vim']
 tools.pacaur(packages)
 
+
 #CONFIGURATION
 tools.mkdir('.vim/bundle')
 with tools.cd('.vim/bundle'):
