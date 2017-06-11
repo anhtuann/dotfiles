@@ -6,10 +6,10 @@ import glob
 def bash_cmd(args, shell=False):
     print(' '.join(args))
     if not shell:
-        subprocess.run(args, stdout=subprocess.PIPE)
+        subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     else:
         arguments = ' '.join(args)
-        subprocess.run(arguments, stdout=subprocess.PIPE, shell=True)
+        subprocess.run(arguments, stdout=subprocess.PIPE, shell=True, stderr=subprocess.PIPE)
 
 def pacman(packages, makepkg=False, noconfirm=True):
     command = ['sudo', 'pacman']
