@@ -16,4 +16,4 @@ with tools.cd(tmp_folder):
         tools.makepkg('*.pkg.tar.xz')
 
 tools.bash_cmd(['mkdir', '-p', '.config/pacaur'])
-tools.bash_cmd(['echo', '"displaybuildfiles=none"', '>' ,'.config/pacaur/config'])
+tools.link_conf('~/Projects/dotfiles/confs/pacaur_conf','~/.config/pacaur/config')
