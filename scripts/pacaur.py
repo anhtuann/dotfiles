@@ -1,6 +1,7 @@
 import tools
 import glob
 
+#INSTALLATION
 packages = ['expac', 'yajl']
 tools.pacman(packages)
 
@@ -16,4 +17,6 @@ with tools.cd(tmp_folder):
         tools.makepkg('*.pkg.tar.xz')
 
 tools.bash_cmd(['mkdir', '-p', '.config/pacaur'])
+
+#CONFIGURATION
 tools.link_conf('~/Projects/dotfiles/confs/pacaur_conf','~/.config/pacaur/config')
