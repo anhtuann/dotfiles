@@ -1,6 +1,7 @@
 import subprocess
 import contextlib
 import os
+import glob
 
 def pacman(packages, makepkg=False, noconfirm=True):
     command = ['sudo', 'pacman']
@@ -33,5 +34,5 @@ def git_clone(repository):
 
 def makepkg(package):
     bash_cmd(['makepkg', '-s'])
-    pacman([package], makepkg=True)
+    pacman(glob.glob(package), makepkg=True)
 
