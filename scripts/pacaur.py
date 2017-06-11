@@ -18,5 +18,4 @@ with tools.cd(tmp_folder):
         tools.makepkg(package)
 
 tools.bash_cmd(['mkdir', '-p', '~/.config/pacaur'])
-tools.bash_cmd(['echo', '"displaybuildfiles=none"', '>' ,'~/.config/pacaur/config']
-
+tools.bash_cmd(['echo', '"displaybuildfiles=none"', '>' ,'~/.config/pacaur/config'])
