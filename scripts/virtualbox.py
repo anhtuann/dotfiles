@@ -20,8 +20,5 @@ else:
     tools.bash_cmd(command.split(' '), shell=True)
     
 #CONFIGURATION
-if choices.INSTALL_ENV == 'virtualbox':
-    command = 'sudo systemctl enable vboxservice.service'
-    tools.bash_cmd(command.split(' '))
-else:
+if choices.INSTALL_ENV != 'virtualbox':
     tools.link_conf('~/Projects/dotfiles/confs/virtualbox_conf', '/etc/modules-load.d/virtualbox.conf', sudo=True)
