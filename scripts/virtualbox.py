@@ -14,3 +14,7 @@ else:
                     'net-tools',
                     'virtualbox-ext-oracle',
                     'qt4'])
+    
+#CONFIGURATION
+if choices.INSTALL_ENV != 'virtualbox':
+    tools.link_conf('~/Projects/dotfiles/confs/virtualbox_conf', '/etc/modules-load.d/virtualbox.conf', sudo=True)
