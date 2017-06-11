@@ -21,7 +21,7 @@ def pacman(packages, makepkg=False, noconfirm=True):
         command.append('--noconfirm')
     for package in packages:
         command.append(package)
-    bash_cmd(args = command, stdout=subprocess.PIPE)
+    bash_cmd(args = command)
 
 @contextlib.contextmanager
 def cd(newdir):
@@ -35,12 +35,12 @@ def cd(newdir):
 def git_clone(repository):
     command = ['git', 'clone']
     command.append(repository)
-    print(' '.join(command))
-    subprocess.run(args = command, stdout=subprocess.PIPE)
+    bash_cmd(args = command)
 
 def makepkg(package):
     bash_cmd(['makepkg', '-s'])
     pacman(glob.glob(package), makepkg=True)
 
 def link_conf(source, link):
+    # need shell True to use tilde wildcard in symlinks
     bash_cmd(['ln','-s', source, link], shell=True)
