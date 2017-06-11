@@ -23,6 +23,18 @@ def pacman(packages, makepkg=False, noconfirm=True):
         command.append(package)
     bash_cmd(args = command)
 
+def pacaur(packages, makepkg=False, noconfirm=True):
+    command = ['pacaur']
+    if not makepkg:
+        command.append('-S')
+    else:
+        command.append('-U')
+    if noconfirm:
+        command.append('--noconfirm')
+    for package in packages:
+        command.append(package)
+    bash_cmd(args = command)
+
 @contextlib.contextmanager
 def cd(newdir):
     prevdir = os.getcwd()
