@@ -1,4 +1,5 @@
 from scripts import tools
+import os
 
 #INSTALL
 packages = ['i3',
@@ -33,7 +34,8 @@ tools.link_conf('~/Projects/dotfiles/confs/volumeicon_conf', '~/.config/volumeic
 tools.link_conf('~/Projects/dotfiles/confs/dunst_conf','~/.config/dunst/dunstrc')
 
 wallpapers_dir = '~/Pictures/wallpapers'
+wallpaper = '~/Projects/dotfiles/statics/dayofthetentacle.jpg'
 tools.mkdir(wallpapers_dir)
-tools.bash_cmd('cp', '~/Projects/dotfiles/statics/dayofthetentacle.jpg', wallpapers_dir)
+tools.bash_cmd(['cp', os.path.expanduser(wallpaper), os.path.expanduser(wallpapers_dir)])
 tools.link_conf('~/Projects/dotfiles/confs/fehbg_conf','~/.fehbg')
 
