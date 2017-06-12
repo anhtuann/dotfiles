@@ -15,9 +15,9 @@ else:
                 'qt4']
     tools.pacaur(packages)
     command = "sudo dkms install vboxhost/$(pacman -Q virtualbox|awk '{print $2}'|sed 's/\-.\+//') -k $(uname -rm|sed 's/\ /\//')"
-    tools.bash_cmd(command.split(' '), shell=True)
+    tools.bash_cmd(command, shell=True)
     command = "sudo gpasswd -a $USER vboxusers"
-    tools.bash_cmd(command.split(' '), shell=True)
+    tools.bash_cmd(command, shell=True)
     
 #CONFIGURATION
 if choices.INSTALL_ENV != 'virtualbox':

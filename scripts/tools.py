@@ -3,13 +3,15 @@ import contextlib
 import os
 import glob
 
-def bash_cmd(args, shell=False):
+def bash_cmd(args, shell_opt=False):
+    '''
+    shell_opt: boolean
+    args: list if shell_opt == False,
+          str if shell_opt == True
+    execute the command args
+    '''
     print(' '.join(args))
-    if not shell:
-        subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    else:
-        arguments = ' '.join(args)
-        subprocess.run(arguments, stdout=subprocess.PIPE, shell=True, stderr=subprocess.PIPE)
+    subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=shell_opt)
 
 def pacman(packages, makepkg=False, noconfirm=True):
     command = ['sudo', 'pacman']
@@ -62,6 +64,6 @@ def link_conf(source, link, sudo = False):
     # need shell True to use tilde wildcard in symlinks
     command = ['sudo', 'ln', '-s', source, link]
     if sudo == False:
-        bash_cmd(command[1:], shell=True)
+        bash_cmd(' '.join(command[1:]), shell=True)
     else:
-        bash_cmd(command, shell=True)
+        bash_cmd(' '.join(command), shell=True)
