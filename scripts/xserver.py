@@ -8,4 +8,4 @@ packages = ['xorg-server',
 tools.pacaur(packages)
 
 #CONFIGURATION
-tools.link_conf('~/Projects/dotfiles/machines/dreamland/confs/xinitrc_conf', '~/.xinitrc')
+tools.link_conf('~/Projects/dotfiles/confs/xinitrc_conf', '~/.xinitrc')
