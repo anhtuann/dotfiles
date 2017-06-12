@@ -1,5 +1,5 @@
 import choices
-import tools
+from scripts import tools
 
 #INSTALL
 if choices.INSTALL_ENV == 'virtualbox':

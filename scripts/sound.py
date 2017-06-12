@@ -1,4 +1,4 @@
-import tools
+from scripts import tools
 
 packages = ['alsa',
             'alsa-utils',

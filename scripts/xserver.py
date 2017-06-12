@@ -1,4 +1,4 @@
-import tools
+from scripts import tools
 
 #INSTALL
 packages = ['xorg-server',
