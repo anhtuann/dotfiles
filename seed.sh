@@ -14,6 +14,5 @@ cd ~/Projects
 git clone git@anhtuann.com:anhtuann/dotfiles.git
 cd dotfiles
 git checkout python_refactor
-sudo rm /etc/pacman.conf
-sudo ln -s ~/Projects/dotfiles/confs/pacman_conf /etc/pacman.conf
+sudo ln -sf ~/Projects/dotfiles/confs/pacman_conf /etc/pacman.conf
 sudo pacman -Syu --noconfirm

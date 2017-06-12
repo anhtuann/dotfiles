@@ -5,7 +5,6 @@ packages = ['zsh']
 tools.pacaur(packages)
 
 #CONFIGURATION
-tools.bash_cmd(['rm', '~/.zshrc'])
 tools.link_conf('~/Projects/dotfiles/confs/zshrc_conf', '~/.zshrc')
 tools.bash_cmd(['chsh', '-s', '/bin/zsh'])
 with tools.cd('~/.config'):

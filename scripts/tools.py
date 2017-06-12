@@ -64,7 +64,7 @@ def mkdir(path):
     bash_cmd(['mkdir', '-p', os.path.expanduser(path)])
 
 def link_conf(source, link, sudo = False):
-    command = ['sudo', 'ln', '-s', os.path.expanduser(source), os.path.expanduser(link)]
+    command = ['sudo', 'ln', '-sf', os.path.expanduser(source), os.path.expanduser(link)]
     if sudo == False:
         bash_cmd(command[1:])
     else:
