@@ -24,6 +24,7 @@ def pacman(packages, makepkg=False, noconfirm=True):
         command.append('-U')
     if noconfirm:
         command.append('--noconfirm')
+    command.append('--needed')
     for package in packages:
         command.append(package)
     bash_cmd(args = command)
@@ -36,6 +37,7 @@ def pacaur(packages, makepkg=False, noconfirm=True):
         command.append('-U')
     if noconfirm:
         command.append('--noconfirm')
+    command.append('--needed')
     for package in packages:
         command.append(package)
     bash_cmd(args = command)
