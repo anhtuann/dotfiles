@@ -9,4 +9,6 @@ STEPS = ['pacaur.py',
          'fs_management.py',
          'fonts.py',
          'sound.py',
-         'browser.py']
+         'browser.py',
+         'vim.py',
+         'shell.py']
