@@ -14,7 +14,7 @@ def bash_cmd(args, shell=False):
         print(' '.join(args))
     else:
         print(args)
-    subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=shell)
+    subprocess.run(args, stdout=subprocess.PIPE, shell=shell)
 
 def pacman(packages, makepkg=False, noconfirm=True):
     command = ['sudo', 'pacman']
@@ -61,12 +61,11 @@ def makepkg(package):
     pacman(glob.glob(package), makepkg=True)
 
 def mkdir(path):
-    bash_cmd(['mkdir', '-p', path])
+    bash_cmd(['mkdir', '-p', os.path.expanduser(path)])
 
 def link_conf(source, link, sudo = False):
-    # need shell True to use tilde wildcard in symlinks
-    command = ['sudo', 'ln', '-s', source, link]
+    command = ['sudo', 'ln', '-s', os.path.expanduser(source), os.path.expanduser(link)]
     if sudo == False:
-        bash_cmd(' '.join(command[1:]), shell=True)
+        bash_cmd(command[1:])
     else:
-        bash_cmd(' '.join(command), shell=True)
+        bash_cmd(command)

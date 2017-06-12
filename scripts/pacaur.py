@@ -16,7 +16,7 @@ with tools.cd(tmp_folder):
     with tools.cd('pacaur'):
         tools.makepkg('*.pkg.tar.xz')
 
-tools.mkdir('.config/pacaur')
+tools.mkdir('~/.config/pacaur')
 
 #CONFIGURATION
 tools.link_conf('~/Projects/dotfiles/confs/pacaur_conf','~/.config/pacaur/config')

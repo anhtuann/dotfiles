@@ -5,7 +5,7 @@ packages = ['zsh']
 tools.pacaur(packages)
 
 #CONFIGURATION
-with tools.cd('.config'):
+with tools.cd('~/.config'):
     tools.git_clone('https://github.com/chriskempson/base16-shell.git')
 command = 'sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"'
 tools.bash_cmd(command, shell=True)
