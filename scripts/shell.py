@@ -14,5 +14,5 @@ command = 'sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/to
 tools.bash_cmd(command, shell=True)
 
 #may need to execute those two commands after reboot because of the change of shell
-tools.bash_cmd(['source', '~/.zshrc'])
-tools.bash_cmd(['base16_3024'])
+tools.bash_cmd('source ~/.zshrc', shell=True)
+tools.bash_cmd('base16_3024', shell=True)
