@@ -1,4 +1,4 @@
-from scripts import choices
+import choices
 import importlib
 import os
 
