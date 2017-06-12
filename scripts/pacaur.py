@@ -1,4 +1,4 @@
-from scripts from scripts import tools
+from scripts import tools
 import glob
 
 #INSTALL
