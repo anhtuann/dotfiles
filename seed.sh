@@ -8,9 +8,12 @@ sudo reflector --protocol http --sort rate --fastest 6 --threads 10 --save /etc/
 sudo pacman -Syu --noconfirm
 
 #Get dotfiles project
-sudo pacman -S git openssh
+sudo pacman -S --noconfirm git openssh
 mkdir ~/Projects
 cd ~/Projects
 git clone git@anhtuann.com:anhtuann/dotfiles.git
 cd dotfiles
 git checkout python_refactor
+sudo rm /etc/pacman.conf
+sudo ln -s ~/Projects/dotfiles/confs/pacman_conf /etc/pacman.conf
+sudo pacman -Syu --noconfirm
