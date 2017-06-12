@@ -1,7 +1,7 @@
 import tools
 import glob
 
-#INSTALLATION
+#INSTALL
 packages = ['expac', 'yajl']
 tools.pacman(packages)
 

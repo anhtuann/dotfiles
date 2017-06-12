@@ -1,7 +1,7 @@
 import tools
 import choices
 
-#INSTALLATION
+#INSTALL
 if choices.INSTALL_ENV != 'virtualbox':
     packages = ['bumblebee',
                 'mesa',

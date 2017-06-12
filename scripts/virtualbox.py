@@ -1,7 +1,7 @@
 import choices
 import tools
 
-#INSTALLATION
+#INSTALL
 if choices.INSTALL_ENV == 'virtualbox':
     packages = ['virtualbox-guest-modules-arch',
                 'virtualbox-guest-utils']

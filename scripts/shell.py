@@ -1,6 +1,6 @@
 import tools
 
-#INSTALLATION
+#INSTALL
 packages = ['zsh']
 tools.pacaur(packages)
 

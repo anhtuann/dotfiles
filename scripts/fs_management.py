@@ -1,6 +1,6 @@
 import tools
 
-#INSTALLATION
+#INSTALL
 packages = ['libmtp',
             'android-file-transfer',
             'udisks2',

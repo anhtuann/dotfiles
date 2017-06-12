@@ -1,6 +1,6 @@
 import tools
 
-#INSTALLATION
+#INSTALL
 packages = ['i3',
             'rxvt-unicode',
             'rofi',

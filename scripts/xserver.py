@@ -1,6 +1,6 @@
 import tools
 
-#INSTALLATION
+#INSTALL
 packages = ['xorg-server',
             'xorg-apps',
             'xorg-xinit',
