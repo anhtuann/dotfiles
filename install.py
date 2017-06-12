@@ -1,5 +1,4 @@
-import choices
+import scripts.choices
 
-for step in choices.STEPS:
-    import step
-    
+for step in scripts.choices.STEPS:
+    import 'scripts.' + step
