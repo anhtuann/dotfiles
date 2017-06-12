@@ -1,4 +1,5 @@
-import scripts.choices
+import scripts
+import importlib
 
 for step in scripts.choices.STEPS:
-    import 'scripts.' + step
+    importlib.import_module('scripts.' + step)
