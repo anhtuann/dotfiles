@@ -3,7 +3,8 @@ import tools
 
 #INSTALLATION
 if choices.INSTALL_ENV == 'virtualbox':
-    packages = ['virtualbox-guest-modules-arch']
+    packages = ['virtualbox-guest-modules-arch',
+                'virtualbox-guest-utils']
     tools.pacaur(packages)
 else:
     packages = ['virtualbox', 
