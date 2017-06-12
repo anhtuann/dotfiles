@@ -31,3 +31,9 @@ tools.link_conf('~/Projects/dotfiles/confs/i3status_conf', '~/.config/i3status/c
 tools.link_conf('~/Projects/dotfiles/confs/Xresources_conf', '~/.Xresources')
 tools.link_conf('~/Projects/dotfiles/confs/volumeicon_conf', '~/.config/volumeicon/volumeicon')
 tools.link_conf('~/Projects/dotfiles/confs/dunst_conf','~/.config/dunst/dunstrc')
+
+wallpapers_dir = '~/Pictures/wallpapers'
+tools.mkdir(wallpapers_dir)
+tools.bash_cmd('cp', '~/Projects/dotfiles/statics/dayofthetentacle.jpg', wallpapers_dir)
+tools.link_conf('~/Projects/dotfiles/confs/fehbg_conf','~/.fehbg')
+

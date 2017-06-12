@@ -1,0 +1,2 @@
+#!/bin/sh
+feh  --bg-scale '/home/anhtuann/Pictures/wallpapers/dayofthetentacle.jpg' 
