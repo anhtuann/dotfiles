@@ -1,7 +1,6 @@
 from scripts import tools
 
-packages = ['alsa',
-            'alsa-utils',
+packages = ['alsa-utils',
             'pulseaudio', 
             'pulseaudio-alsa',
             'pulseaudio-bluetooth',
