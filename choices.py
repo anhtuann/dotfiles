@@ -10,6 +10,9 @@ MINIMAL = ['pacaur.py',
            'fonts.py',
            'sound.py',
            'browser.py',
+           'code_env.py',
+           'multimedia.py',
+           'web_tools.py',
            'vim.py',
            'shell.py']
 
