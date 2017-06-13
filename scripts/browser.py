@@ -8,4 +8,4 @@ packages = ['firefox',
 tools.pacaur(packages)
 
 #CONFIGURATION
-tools.link_conf('~/Projects/dotfiles/machines/dreamland/confs/vimperatorrc_conf', '~/.vimperatorrc')
+tools.link_conf('~/Projects/dotfiles/confs/vimperatorrc_conf', '~/.vimperatorrc')
