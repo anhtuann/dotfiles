@@ -12,3 +12,6 @@ with tools.cd('~/.vim/bundle'):
 tools.link_conf('~/Projects/dotfiles/confs/vimrc_conf', '~/.vimrc')
 command = 'vim -E -S ~/.vimrc +PluginInstall +qall'
 tools.bash_cmd(command, shell=True)
+with tools.cd('~/.vim/bundle/YouCompleteMe'):
+    command = 'python install.py --system-boost'
+    tools.bash_cmd(command.strip(' '))

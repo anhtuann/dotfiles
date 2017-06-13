@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 "plugins vundle
 Plugin 'flazz/vim-colorschemes'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
