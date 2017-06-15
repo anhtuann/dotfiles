@@ -17,8 +17,8 @@ MINIMAL = ['pacaur.py',
            'shell.py']
 
 HARDWARE = ['bumblebee.py',
-            'input.py',
-            'power.py']
+            'input.py'] #,
+            #'power.py']
 
 STEPS = list()
 STEPS.extend(MINIMAL)
