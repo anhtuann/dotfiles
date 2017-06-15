@@ -12,6 +12,7 @@ sudo pacman -S --noconfirm git openssh
 mkdir ~/Projects
 cd ~/Projects
 git clone git@anhtuann.com:anhtuann/dotfiles.git
+ln -sf ~/Projects/dotfiles/confs/git_conf ~/.gitconfig
 cd dotfiles
 sudo ln -sf ~/Projects/dotfiles/confs/pacman_conf /etc/pacman.conf
 sudo pacman -Syu --noconfirm
