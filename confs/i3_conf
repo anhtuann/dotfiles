@@ -41,8 +41,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym Print exec scrot ~/Documents/screenshots/%Y-%m-%d-%T-scrot.png
 
 ### Brightness keybindings ###
-bindsym XF86MonBrightnessUp exec light -A 1
-bindsym XF86MonBrightnessDown exec light -U 1
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5%
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5%
 
 ### Custom launchers ###
 bindsym $mod+w exec firefox
