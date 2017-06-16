@@ -4,7 +4,8 @@ from scripts import tools
 packages = ['xorg-server',
             'xorg-apps',
             'xorg-xinit',
-            'arandr']
+            'arandr',
+            'xbanish']
 tools.pacaur(packages)
 
 #CONFIGURATION
