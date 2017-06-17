@@ -1,5 +1,5 @@
 !urxvt
-URxvt*font: xft:Hack:size=12:antialias=true
+URxvt*font: xft:Hack:size=12:antialias=true, xft:Symbola
 URxvt.letterSpace: 1
 URxvt.scrollBar: false
 URxvt.perl-ext-common: default,matcher
