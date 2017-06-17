@@ -13,6 +13,9 @@ Plugin 'VundleVim/Vundle.vim'
 "plugins vundle
 Plugin 'flazz/vim-colorschemes'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,3 +53,19 @@ endif
 " netrw configuration for project drawer style
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
+
+" vim-airline configuration for enhanced status line
+set laststatus=2
+let g:airline_theme='wombat'
+
+" syntastic configuration for syntax highlighting
+let syntastic_style_error_symbol = '✘'
+let syntastic_style_warning_symbol = "▲"
+augroup mySyntastic
+  au!
+  au FileType tex let b:syntastic_mode = "passive"
+augroup END
+let g:syntastic_check_on_open = 1
+
+" removing grey highlight in the sign column
+:hi clear SignColumn
