@@ -4,7 +4,8 @@ from scripts import tools
 packages = ['unrar',
             'unzip',
             'rsync',
-            'ranger',]
+            'ranger',
+            'w3m']
 tools.pacaur(packages)
 
 #CONFIGURATION
