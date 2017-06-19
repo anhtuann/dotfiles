@@ -8,5 +8,6 @@ packages = ['libmtp',
             'ntfs-3g',
             'dosfstools',
             'hfsprogs',
-            'exfat-utils']
+            'exfat-utils',
+            'gparted']
 tools.pacaur(packages)
