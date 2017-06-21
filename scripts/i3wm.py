@@ -34,6 +34,8 @@ tools.link_conf('~/Projects/dotfiles/confs/volumeicon_conf', '~/.config/volumeic
 tools.link_conf('~/Projects/dotfiles/confs/dunst_conf','~/.config/dunst/dunstrc')
 tools.link_conf('~/Projects/dotfiles/confs/redshift_conf', '~/.config/redshift.conf')
 
+screenshots_dir = '~/Pictures/screenshots'
+tools.mkdir(screenshots_dir)
 wallpapers_dir = '~/Pictures/wallpapers'
 wallpaper = '~/Projects/dotfiles/statics/dayofthetentacle.jpg'
 tools.mkdir(wallpapers_dir)
