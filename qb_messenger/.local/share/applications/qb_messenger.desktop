@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=qb_messenger
+GenericName=Messenger Wrapper
+Icon=qutebrowser
+Type=Application
+Categories=Network;WebBrowser;
+Exec=qutebrowser --temp-basedir --backend=webkit https://www.messenger.com/login/
+Terminal=false
+StartupNotify=false
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
+Keywords=Browser
