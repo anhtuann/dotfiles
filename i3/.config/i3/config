@@ -50,8 +50,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 ### Custom launchers ###
 bindsym $mod+w exec qutebrowser
 bindsym $mod+a exec pa_sound_toggle.sh
-bindsym $mod+p exec keepassxc #Should only activate one instance
-bindsym $mod+Shift+d exec rofi-pass
+bindsym $mod+p exec rofi-pass
+bindsym $mod+Shift+d exec keepassxc
 
 ### Focus keybindings ###
 bindsym $mod+Shift+a focus parent
