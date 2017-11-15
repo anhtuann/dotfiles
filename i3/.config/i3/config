@@ -37,8 +37,6 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+c reload
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym Print exec scrot ~/Pictures/screenshots/%Y-%m-%d-%T-scrot.png
 
 ### Brightness keybindings ###
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5
@@ -65,11 +63,6 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-# Arrows
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
 
 ### Workspace keybindings ###
 # Show workspace
@@ -101,11 +94,6 @@ bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-# Arrows
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
 
 ### Layout Keybindings ###
 # Split layout
@@ -113,11 +101,6 @@ bindsym $mod+b split h
 bindsym $mod+v split v
 # Layout mode
 bindsym $mod+f fullscreen
-bindsym $mod+Shift+w layout tabbed
-bindsym $mod+e layout toggle split
-# Floating
-bindsym $mod+Shift+space floating toggle
-bindsym $mod+space focus mode_toggle
 
 ### Mode keybindings ###
 
@@ -128,11 +111,6 @@ mode "resize" {
         bindsym j resize grow height 10 px or 10 ppt
         bindsym k resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
-        # Arrows
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
         # Exit
         bindsym Escape mode "default"
 }
