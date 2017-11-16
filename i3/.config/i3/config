@@ -146,7 +146,6 @@ exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id sh ~/.fehbg
 exec --no-startup-id caffeine
 exec --no-startup-id dunst
-exec --no-startup-id dropbox start
 exec --no-startup-id redshift
 exec --no-startup-id setxkbmap gb
 exec --no-startup-id xset s off dpms 300
