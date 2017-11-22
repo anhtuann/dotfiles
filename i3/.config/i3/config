@@ -31,6 +31,11 @@ new_window pixel 5
 ###############
 # KEYBINDINGS #
 ###############
+
+### Colemak learning ###
+bindsym $mod+Up exec setxkbmap gb -variant colemak
+bindsym $mod+Down exec setxkbmap gb
+
 ### System keybindings ###
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
