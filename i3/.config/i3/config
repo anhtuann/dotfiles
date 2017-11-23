@@ -42,6 +42,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+c reload
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+Shift+r restart
+bindsym Print exec scrot ~/Pictures/screenshots/%Y-%m-%d-%T-scrot.png
 
 ### Brightness keybindings ###
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5
