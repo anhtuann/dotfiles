@@ -1,3 +1,6 @@
+#HiDPI
+c.qt.highdpi = True
+
 # How many commands to save in the command history. 
 # 0: no history / -1: unlimited
 # Type: Int
@@ -15,11 +18,16 @@ c.fonts.monospace = 'Hack, "xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mo
 
 # The default font size for regular text.
 # Type: Int
-c.fonts.web.size.default = 14
+c.fonts.web.size.default = 12
 
 # The default font size for fixed-pitch text.
 # Type: Int
-c.fonts.web.size.default_fixed = 12
+c.fonts.web.size.default_fixed = 10
+
+# Custom fonts
+c.fonts.tabs = '8pt monospace'
+c.fonts.completion.entry = '8pt monospace'
+c.fonts.completion.category = '8pt monospace'
 
 # Behavior when the last tab is closed.
 # Type: String
@@ -45,7 +53,7 @@ c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}',
                         'gf': 'https://www.google.com/search?hl=fr&q={}'}
 # The default zoom level.
 # Type: Perc
-c.zoom.default = '90%'
+c.zoom.default = '80%'
 
 ## Bindings for normal mode
 config.bind('K', 'tab-next')
