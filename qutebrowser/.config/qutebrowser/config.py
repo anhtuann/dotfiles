@@ -28,6 +28,7 @@ c.fonts.web.size.default_fixed = 10
 c.fonts.tabs = '8pt monospace'
 c.fonts.completion.entry = '8pt monospace'
 c.fonts.completion.category = '8pt monospace'
+c.fonts.statusbar = '8pt monospace'
 
 # Behavior when the last tab is closed.
 # Type: String
