@@ -148,7 +148,6 @@ exec_always --no-startup-id ~/Projects/useful-scripts/polybar.sh
 ####################
 exec --no-startup-id xbanish
 exec --no-startup-id udiskie -s
-exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id sh ~/.fehbg
 exec --no-startup-id caffeine
 exec --no-startup-id redshift-gtk
