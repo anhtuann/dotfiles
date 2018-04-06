@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=youtube-viewer
+GenericName=Youtube viewer
+Icon=youtube-viewer
+Type=Application
+Categories=Network;Multimedia;
+Exec=gtk-youtube-viewer %u
+Terminal=false
+StartupNotify=false
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
