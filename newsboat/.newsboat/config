@@ -1,2 +1,3 @@
+browser "qutebrowser %u"
 auto-reload yes
 macro y set browser "youtube-viewer %u" ; open-in-browser ; set browser "elinks %u"
