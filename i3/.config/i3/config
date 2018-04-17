@@ -58,6 +58,7 @@ bindsym $mod+a exec pa_sound_toggle.sh
 bindsym $mod+p exec rofi-pass
 bindsym $mod+Shift+d exec keepassxc
 bindsym $mod+d exec rofi -show drun
+bindsym $mod+u exec UDISKIE_DMENU_LAUNCHER="rofi" udiskie-dmenu -matching regex -dmenu -i -no-custom -multi-select
 
 ### Focus keybindings ###
 bindsym $mod+Shift+a focus parent
@@ -147,7 +148,7 @@ exec_always --no-startup-id ~/Projects/useful-scripts/polybar.sh
 # STARTUP PROGRAMS #
 ####################
 exec --no-startup-id xbanish
-exec --no-startup-id udiskie -s
+exec --no-startup-id udiskie
 exec --no-startup-id sh ~/.fehbg
 exec --no-startup-id caffeine
 exec --no-startup-id redshift-gtk
