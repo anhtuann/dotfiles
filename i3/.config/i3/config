@@ -40,7 +40,6 @@ bindsym $mod+Down exec setxkbmap gb
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+c reload
-bindsym $mod+d exec rofi -show drun
 bindsym $mod+Shift+r restart
 bindsym Print exec scrot ~/Pictures/screenshots/%Y-%m-%d-%T-scrot.png
 
@@ -58,6 +57,7 @@ bindsym $mod+w exec qutebrowser
 bindsym $mod+a exec pa_sound_toggle.sh
 bindsym $mod+p exec rofi-pass
 bindsym $mod+Shift+d exec keepassxc
+bindsym $mod+d exec rofi -show drun
 
 ### Focus keybindings ###
 bindsym $mod+Shift+a focus parent
