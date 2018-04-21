@@ -12,8 +12,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 "plugins vundle
 Plugin 'flazz/vim-colorschemes'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
