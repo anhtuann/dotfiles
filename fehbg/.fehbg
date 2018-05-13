@@ -1,2 +1,2 @@
 #!/bin/sh
-'feh' '--bg-max' '/home/anhtuann/Pictures/wallpapers/takingcontrol.jpg' 
+feh --bg-fill '/home/anhtuann/Pictures/wallpapers/takingcontrol.jpg' 
