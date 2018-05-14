@@ -11,30 +11,25 @@ general {
         interval = 5
 }
 
-order += "disk /home"
-order += "wireless wlp58s0"
-order += "battery 0"
-order += "load"
-order += "tztime local"
+order += "wifi"
+order += "battery_level"
+order += "clock"
+order += "pomodoro"
 
-wireless wlp58s0 {
-        format_up = "W: (%quality at %essid) %ip"
-        format_down = "W: down"
+wifi {
+        format = " {bitrate} {ssid}| down"
 }
 
-battery 0 {
-        format = "%status %percentage %remaining"
+battery_level {
+        blocks = ""
+        format = "{icon} {percent}% {time_remaining}"
 }
 
-tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+clock {
+    format = ["{Europe/Paris}", "{Asia/Ho_Chi_Minh}"]
+    format_time = "%Y-%m-%d %H:%M ({name})"
 }
 
-load {
-        format = "%1min"
+pomodoro {
+    format = "{mmss}"
 }
-
-disk "/home" {
-        format = "%percentage_free HD free"
-}
-
