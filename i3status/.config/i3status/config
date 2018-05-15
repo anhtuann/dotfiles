@@ -11,12 +11,20 @@ general {
         interval = 5
 }
 
+order += "window_title_async"
 order += "wifi"
 order += "battery_level"
 order += "clock"
-order += "pomodoro"
+order += "frame pomo"
+
+window_title_async {
+        max_width = 60 
+}
 
 wifi {
+        round_bitrate = False
+        bitrate_degraded = 0.5
+        bitrate_bad = 0.1
         format = " {bitrate} {ssid}| down"
 }
 
@@ -30,6 +38,11 @@ clock {
     format_time = "%Y-%m-%d %H:%M ({name})"
 }
 
-pomodoro {
-    format = "{mmss}"
+frame pomo {
+    format = '{output}{button}'
+    #format_button_close = ''
+    #format_button_open = ''
+    pomodoro {
+        format = "{mmss}"
+    }
 }
