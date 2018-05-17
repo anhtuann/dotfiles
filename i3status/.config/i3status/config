@@ -22,10 +22,9 @@ window_title_async {
 }
 
 wifi {
-        round_bitrate = False
         bitrate_degraded = 0.5
         bitrate_bad = 0.1
-        format = " {bitrate} {ssid}| down"
+        format = " {ssid}| down"
 }
 
 battery_level {
@@ -34,7 +33,7 @@ battery_level {
 }
 
 clock {
-    format = ["{Europe/Paris}", "{Asia/Ho_Chi_Minh}"]
+    format = ["{Europe/London}", "{Asia/Ho_Chi_Minh}"]
     format_time = "%Y-%m-%d %H:%M ({name})"
 }
 
