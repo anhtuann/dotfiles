@@ -16,6 +16,7 @@ order += "wifi"
 order += "battery_level"
 order += "clock"
 order += "frame pomo"
+order += "volume_status"
 
 window_title_async {
         max_width = 60 
@@ -44,4 +45,8 @@ frame pomo {
     pomodoro {
         format = "{mmss}"
     }
+}
+
+volume_status {
+    command = "pactl"
 }
