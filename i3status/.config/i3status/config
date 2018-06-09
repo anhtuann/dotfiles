@@ -15,7 +15,6 @@ order += "window_title_async"
 order += "wifi"
 order += "battery_level"
 order += "clock"
-order += "frame pomo"
 order += "volume_status"
 
 window_title_async {
@@ -36,15 +35,6 @@ battery_level {
 clock {
     format = ["{Europe/Paris}", "{Asia/Ho_Chi_Minh}"]
     format_time = "%Y-%m-%d %H:%M ({name})"
-}
-
-frame pomo {
-    format = '{output}{button}'
-    #format_button_close = ''
-    #format_button_open = ''
-    pomodoro {
-        format = "{mmss}"
-    }
 }
 
 volume_status {
