@@ -129,7 +129,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Power management
-set $Locker $HOME/Projects/useful-scripts/i3lock.sh && sleep 1
+set $Locker $HOME/.scripts/i3lock.sh && sleep 1
 set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (Shift+s) shutdown
 
 mode "$mode_system" {
@@ -166,7 +166,6 @@ bar {
         urgent_workspace   #ffffff #900000
     }
 }
-#exec_always --no-startup-id ~/Projects/useful-scripts/polybar.sh
 
 ####################
 # STARTUP PROGRAMS #
