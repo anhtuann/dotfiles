@@ -37,7 +37,7 @@ bindsym $mod+Up exec setxkbmap gb -variant colemak
 bindsym $mod+Down exec setxkbmap gb
 
 ### System keybindings ###
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec st
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
