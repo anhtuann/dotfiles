@@ -1,0 +1,1 @@
+/home/anhtuann/.dotfiles/st/.cache/pacaur/st/config.h
