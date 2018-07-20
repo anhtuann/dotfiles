@@ -3,3 +3,5 @@
 [user]
 	name = Anh Tuan Nguyen
 	email = anhtuann@protonmail.com
+[merge]
+	tool = vimdiff
