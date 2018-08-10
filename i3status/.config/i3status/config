@@ -33,7 +33,7 @@ battery_level {
 }
 
 clock {
-    format = ["{Europe/Paris}", "{Asia/Ho_Chi_Minh}"]
+    format = ["{Local}", "{Asia/Ho_Chi_Minh}"]
     format_time = "%Y-%m-%d %H:%M ({name})"
 }
 
